@@ -1,4 +1,4 @@
-<div>
+<div id="wrapper">
 
     <div class="left-Sidebar" [@sideMenuAnim]='openClose'>
         <nav>
@@ -18,7 +18,7 @@
                     <h2>John Doe</h2>
                 </div>
             </div>
-        
+
             <ul>
                 <li>
                     <a routerLink="/dashboard" routerLinkActive="custom-active">
@@ -97,5 +97,14 @@
 
             </ul>
         </nav>
+    </div>
+
+
+    <app-header></app-header>
+    <div id="content">
+        <div id="right-content">
+            fsdfs
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>
