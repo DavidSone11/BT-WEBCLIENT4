@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import {BankAccount} from '../../classes/bank-account';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,15 +12,21 @@ export class LoginComponent implements OnInit {
 
   enable: boolean = false;
   // constructor(private bankAccount:BankAccount) { 
-  constructor() {
-    // bankAccount.displayDetails();
+  constructor(private router: Router, private route: ActivatedRoute,
+  ) {
+
   }
 
   ngOnInit() {
   }
 
   login() {
+
     console.log("dasd");
+    localStorage.setItem("username", "santosh");
+    localStorage.setItem("role", "admin");
+    localStorage.setItem("token", "CpzUMHyMPPtmp8gW8EhTxlzuQA3o8ahx");
+    this.router.navigate(['/dashboard']);
   }
 
 
