@@ -145,6 +145,11 @@
     border-radius: 50%;
 }
 
+.custom-active {
+    border: 1px solid greenyellow;
+    border-left-color:  greenyellow;
+}
+
 @media (max-width: 768px) {
     .left-Sidebar {
         width: 100px;
