@@ -11,6 +11,10 @@ import { LeftSidebarComponent } from './components/left-sidebar/left-sidebar.com
 import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TrainsComponent } from './components/trains/trains.component';
+import { TrainStationComponent } from './components/train-station/train-station.component';
+import { UserComponent } from './components/user/user.component';
+import { UserplanComponent } from './components/userplan/userplan.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { FooterComponent } from './components/footer/footer.component';
     LeftSidebarComponent,
     RightSidebarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TrainsComponent,
+    TrainStationComponent,
+    UserComponent,
+    UserplanComponent
   ],
   imports: [
     BrowserModule,
