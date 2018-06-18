@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 // import { Observable } from 'rxjs/Observable';
 import { Observable, of } from 'rxjs'
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/delay';
+// import 'rxjs/add/observable/of';
+// import 'rxjs/add/operator/do';
+// import 'rxjs/add/operator/delay';
 
 import { Http } from '@angular/http';
 
 // import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/map'
-import 'rxjs/add/operator/toPromise';
+// import 'rxjs/add/operator/map'
+// import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class AuthService {
