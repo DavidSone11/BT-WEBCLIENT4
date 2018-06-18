@@ -9,15 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  enable: boolean = false;
   // constructor(private bankAccount:BankAccount) { 
-    constructor() { 
+  constructor() {
     // bankAccount.displayDetails();
   }
 
   ngOnInit() {
   }
 
-  login(){
+  login() {
     console.log("dasd");
   }
 
