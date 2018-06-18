@@ -127,7 +127,7 @@
 
 .left-Sidebar .profile_info {
     margin-bottom: 30px;
-    border-bottom: 3px solid rgba(28,48,53);
+    /* border-bottom: 3px solid rgba(28,48,53); */
 }
 
 .left-Sidebar .img-circle.profile_img {
