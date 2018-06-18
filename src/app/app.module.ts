@@ -25,9 +25,6 @@ export class AppComponent {
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-
-
-
   ],
   imports: [
     BrowserModule,
