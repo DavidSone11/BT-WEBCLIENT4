@@ -15,6 +15,9 @@ import { TrainsComponent } from './components/trains/trains.component';
 import { TrainStationComponent } from './components/train-station/train-station.component';
 import { UserComponent } from './components/user/user.component';
 import { UserplanComponent } from './components/userplan/userplan.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassword.component';
+import { BlankComponent } from './components/blank/blank.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { UserplanComponent } from './components/userplan/userplan.component';
     TrainsComponent,
     TrainStationComponent,
     UserComponent,
-    UserplanComponent
+    UserplanComponent,
+    RegisterComponent,
+    ForgetpasswordComponent,
+    BlankComponent
   ],
   imports: [
     BrowserModule,
