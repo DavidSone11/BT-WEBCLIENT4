@@ -13,4 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DashboardComponent,
   ]
 })
-export class dashboardComponentModule { }
+export class dashboardComponentModule {
+  
+ }
