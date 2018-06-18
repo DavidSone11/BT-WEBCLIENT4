@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+#content {
+    height:100%;
+    display: flex;
+    min-height: 1000px;
+    
+}

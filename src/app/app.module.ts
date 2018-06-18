@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule,NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { UiSwitchModule } from 'ngx-toggle-switch';
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -25,7 +25,6 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    UiSwitchModule,
     BrowserAnimationsModule,
     NoopAnimationsModule
   ],
