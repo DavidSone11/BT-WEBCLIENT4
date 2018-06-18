@@ -7,10 +7,10 @@ const routes: Routes = [{
         path: '', component: LeftSidebarComponent,
         canActivate: [AuthGuard],
         children: [
-            { path: 'dashboard', loadChildren: 'app/components/dashboard/dashboard.component.module#dashboardComponentModule' },
-            { path: 'blank', loadChildren: 'app/components/blank/blank.component.module#blankComponentModule'},
-            { path: 'userPlan', loadChildren: 'app/components/userplan/userplan.component.module#UserplanComponentModule'},
-            { path: 'user', loadChildren: 'app/components/user/user.component.module#UserComponentModule' }
+            { path: 'dashboard', loadChildren: 'components/dashboard/dashboard.component.module#dashboardComponentModule' },
+            { path: 'blank', loadChildren: 'components/blank/blank.component.module#blankComponentModule'},
+            { path: 'userPlan', loadChildren: 'components/userplan/userplan.component.module#UserplanComponentModule'},
+            { path: 'user', loadChildren: 'components/user/user.component.module#UserComponentModule' }
         ]
     }
 ];
