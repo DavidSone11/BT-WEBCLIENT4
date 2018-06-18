@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   openClose: string = 'open';
+  search:string;
   constructor() { }
 
   ngOnInit() {
