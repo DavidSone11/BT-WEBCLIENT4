@@ -2,6 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { UiSwitchModule } from 'ngx-ui-switch';
+// import {ROUTER-PROVIDER} from '@angular/router';
+// import {HTTP-PROVIDER} from '@angular/http';
+
+
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
