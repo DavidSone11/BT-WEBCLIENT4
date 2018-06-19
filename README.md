@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## additional npm 
 1. npm install ngx-ui-switch --save https://www.npmjs.com/package/ngx-ui-switch
-2. 
+2. npm install angular-router-loader --save-dev https://www.npmjs.com/package/angular-router-loader
 
 
 ## ng server options
