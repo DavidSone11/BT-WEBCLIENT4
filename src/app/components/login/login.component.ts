@@ -5,11 +5,13 @@ import { Router, ActivatedRoute } from '@angular/router';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  
+
 })
 export class LoginComponent implements OnInit {
 
   enable: boolean = false;
+  username: string = 'admin';
+  password: string = 'admin'
   constructor(private router: Router, private route: ActivatedRoute,
   ) {
 

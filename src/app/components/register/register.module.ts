@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent } from './dashboard.component';
-import { DashBoardRouting } from './dasboard.component.routing';
+import { RegisterComponent } from './register.component';
+import { RegisterRouting } from './register.routing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   imports: [
     CommonModule,
-    DashBoardRouting,
+    RegisterRouting,
     BrowserAnimationsModule
   ],
   declarations: [
-    DashboardComponent,
+    RegisterComponent,
   ]
 })
-export class dashboardComponentModule {
-  
- }
+export class RegisterModule {
+
+}
