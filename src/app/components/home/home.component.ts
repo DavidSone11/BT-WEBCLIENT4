@@ -9,11 +9,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
+  commentsList: object;
   constructor(private http: HttpClient) {
   }
   ngOnInit(): void {
     this.http.get('https://jsonplaceholder.typicode.com/comments').subscribe(data => {
-      console.log(data);
+      this.commentsList = data;
+      console.log(this.commentsList);
     });
   }
 }

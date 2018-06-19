@@ -1,22 +1,20 @@
 <div>
 
 
-  <table>
+  <table class="custom">
     <tr>
-      <th>Info Header 1</th>
-      <th>Info Header 2</th>
-      <th>Info Header 3</th>
+      <th>SLNO.</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>BODY</th>
     </tr>
-    <tr>
-      <td>Text 1A</td>
-      <td>Text 1B</td>
-      <td>Text 1C</td>
+    <tr *ngFor="let item of commentsList">
+        <td>{{item.postId}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.body}}</td>
     </tr>
-    <tr>
-      <td>Text 2A</td>
-      <td>Text 2B</td>
-      <td>Text 2C</td>
-    </tr>
+
   </table>
 
 
