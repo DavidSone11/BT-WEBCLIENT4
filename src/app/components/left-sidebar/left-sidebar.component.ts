@@ -57,4 +57,9 @@ export class LeftSidebarComponent implements OnInit {
 
   }
 
+  logout(){
+    //localStorage.removeItem('currentGame');
+    localStorage.clear();
+  }
+
 }

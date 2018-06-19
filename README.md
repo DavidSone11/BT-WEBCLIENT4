@@ -46,3 +46,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 7. ng g interface interfaces/interfacename --module=app.module
 8. ng g enum enums/enumname --module=app.module
 9. ng g module modules/modulename --module=app.module
+
+
+https://loading.io/css/

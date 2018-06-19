@@ -81,7 +81,7 @@
 
 
                 <li>
-                        <a routerLink="/dashboard/user" routerLinkActive="custom-active">
+                    <a routerLink="/dashboard/user" routerLinkActive="custom-active">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <span>User</span>
                     </a>
@@ -90,6 +90,13 @@
                     <a href="#">
                         <i class="fa fa-bell" aria-hidden="true"></i>
                         <span>Bell</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" (click)="logout()">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <span>Logout</span>
                     </a>
                 </li>
 
