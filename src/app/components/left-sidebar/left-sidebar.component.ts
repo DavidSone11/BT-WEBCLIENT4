@@ -28,21 +28,19 @@ import {
       //transition('inactive => active', animate('2s all')),
       //transition('active => inactive', animate('2s all'))
     ]),
-    trigger('contentAnimmation', [
+    trigger('contentAnimation', [
       state('active', style(
         {
-          margin: '0px',
+          //margin: '13px 0 0 181px',
           transition: '0.8s all'
         },
 
 
       )),
       state('inactive', style({ 
-        margin: '-200px',
+        margin: '0px',
         transition:'0.8s all'  
       })),
-      //transition('inactive => active', animate('2s all')),
-      //transition('active => inactive', animate('2s all'))
     ])
   ]
 })
