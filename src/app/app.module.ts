@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app.routes';
 import { PageNotFoundComponent } from './components/page-not-found.component';
@@ -32,7 +33,8 @@ export class AppComponent {
     ReactiveFormsModule,
     AuthModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    HttpClientModule
   ],
   providers: [
   ],
