@@ -8,8 +8,8 @@ const routes: Routes = [{
     canActivate: [AuthGuard],
     children: [
         { path: 'dashboard', loadChildren: '../dashboard/dashboard.module#DashboardModule', canActivate: [AuthGuard] },
-        { path: 'trains', loadChildren: '../trains/trains.module#TrainsModule', canActivate: [AuthGuard] },
-        { path: 'train-station', loadChildren: '../train-station/train-station.module#trainStationModule' },
+        { path: 'train', loadChildren: '../train/train.module#TrainModule', canActivate: [AuthGuard] },
+        { path: 'trainstation', loadChildren: '../train-station/train-station.module#trainStationModule' },
         { path: 'blank', loadChildren: '..//blank/blank.module#blankModule' },
         { path: 'userPlan', loadChildren: '../userplan/userplan.module#UserplanModule' },
         { path: 'user', loadChildren: '../user/user.module#UserModule' }

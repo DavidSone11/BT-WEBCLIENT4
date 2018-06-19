@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TrainsComponent } from './trains.component';
+import { TrainsComponent } from './train.component';
 
 const routes: Routes = [
     { path: '', component: TrainsComponent }

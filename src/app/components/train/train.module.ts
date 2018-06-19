@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TrainsComponent } from './trains.component';
+import { TrainsComponent } from './train.component';
 import { TrainsRouting } from './train.routing';
 
 @NgModule({
@@ -13,6 +13,6 @@ import { TrainsRouting } from './train.routing';
     TrainsComponent,
   ]
 })
-export class TrainsModule {
+export class TrainModule {
 
 }
