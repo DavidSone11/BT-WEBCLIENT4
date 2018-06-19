@@ -1,14 +1,19 @@
 
-import { Directive, ElementRef } from '@angular/core';
+import { Directive, ElementRef, Renderer } from '@angular/core';
 
 @Directive({
-  selector: '[appStates]'
+  selector: '[States]'
 })
 export class StatesDirective {
 
-  constructor(Element: ElementRef) {
-    console.log(Element);
-    Element.nativeElement.innerText = "Text is changed by changeText Directive. ";
-  }
+  // constructor(Element: ElementRef) {
 
+  //   Element.nativeElement.innerText = "Text is changed by changeText Directive. ";
+  //   Element.nativeElement.style.color = "blue";
+
+  // }
+
+  constructor(elem: ElementRef, renderer: Renderer) {
+    renderer.setElementStyle(elem.nativeElement, 'color', '#ff5562');
+  }
 }

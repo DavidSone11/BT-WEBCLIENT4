@@ -1,5 +1,5 @@
 <div id="wrapper">
-
+    <app-header></app-header>
     <div class="left-Sidebar" [@sideMenuAnim]='openClose'>
         <nav>
             <div class="navbar nav_title" style="border: 0;">
@@ -78,8 +78,8 @@
                         <span>Anchor</span>
                     </a>
                 </li>
-               
-               
+
+
                 <li>
                     <a href="#">
                         <i class="fa fa-user" aria-hidden="true"></i>
@@ -95,13 +95,21 @@
 
             </ul>
         </nav>
+
+        <div class="leftFooter">
+                lfooter
+       
+               </div>
+       
+
     </div>
 
 
-    <app-header></app-header>
+
     <div id="content">
         <div id="right-content">
             <router-outlet></router-outlet>
         </div>
     </div>
+    <app-footer></app-footer>
 </div>

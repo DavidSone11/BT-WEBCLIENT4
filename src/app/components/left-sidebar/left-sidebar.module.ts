@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LeftSidebarComponent } from './left-sidebar.component';
 import { LeftSidebarRouting } from './left-sidebar.routing';
 import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { HeaderComponent } from '../header/header.component';
   ],
   declarations: [
     LeftSidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class LeftSidebarModule { }
