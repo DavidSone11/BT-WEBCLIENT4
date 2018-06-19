@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style } from '@angular/animations';
 
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -14,9 +17,17 @@ import { trigger, state, style } from '@angular/animations';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.router.events.pipe(
+      filter((event:Event) => event instanceof NavigationEnd)
+    ).subscribe(x => console.log(x))
+  }
+
+
 
   ngOnInit() {
+
   }
+
 
 }

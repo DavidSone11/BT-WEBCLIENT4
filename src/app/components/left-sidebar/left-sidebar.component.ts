@@ -31,7 +31,7 @@ import {
     trigger('contentAnimation', [
       state('active', style(
         {
-          //margin: '13px 0 0 181px',
+          margin: '13px 0 0 181px',
           transition: '0.8s all'
         },
 
