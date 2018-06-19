@@ -1,5 +1,4 @@
 table.custom {
-    border: 1px solid #ccc;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
@@ -8,20 +7,27 @@ table.custom {
   }
   
   table.custom tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
     padding: .35em;
   }
   
   table.custom th,
   table.custom td {
     text-align: center;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 25px;
+
   }
   
   table.custom th {
     font-size: .85em;
     letter-spacing: .1em;
     text-transform: uppercase;
+    height: 35px;
   }
   
   @media screen and (max-width: 600px) {
