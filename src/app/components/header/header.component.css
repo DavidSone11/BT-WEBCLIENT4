@@ -52,6 +52,7 @@ nav ul li i {
     padding: 5px;
     color:#fff;
     transition: 0.8s all ease;
+    height: 25px;
 }
 
 .nav-left input[type="search"]:focus {

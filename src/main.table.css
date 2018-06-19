@@ -23,8 +23,8 @@ table.custom {
 
   }
   table.custom tbody tr:nth-child(odd){
-    background-color: rgb(204, 207, 211);
-    color: #fff;
+    background-color: rgba(249, 249, 249,1);
+    color: #000;
   }
   table.custom th {
     font-size: .85em;
