@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import {
   trigger,
   state,
@@ -47,7 +48,10 @@ import {
 export class LeftSidebarComponent implements OnInit {
 
   openClose: string = 'active';
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute,
+  ) {
+   
+  }
 
   ngOnInit() {
   }
@@ -60,6 +64,7 @@ export class LeftSidebarComponent implements OnInit {
   logout(){
     //localStorage.removeItem('currentGame');
     localStorage.clear();
+    this.router.navigate(['/login']);
   }
 
 }

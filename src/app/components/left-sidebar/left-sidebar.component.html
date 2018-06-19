@@ -29,7 +29,7 @@
 
                 <li>
                     <a routerLink="/dashboard/home" routerLinkActive="custom-active">
-                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>
                         <span>Home</span>
                     </a>
                 </li>
@@ -51,7 +51,7 @@
 
                 <li>
                     <a routerLink="/pageNotFound" routerLinkActive="custom-active">
-                        <i class="fa fa-th"></i>
+                        <i class="fa fa-th fa-fw"></i>
                         <span>
                             Link Broken
                         </span>
@@ -62,19 +62,19 @@
 
                 <li>
                     <a routerLink="/dashboard/train" routerLinkActive="custom-active">
-                        <i class="fa fa-train" aria-hidden="true"></i>
+                        <i class="fa fa-train fa-fw" aria-hidden="true"></i>
                         <span>Trains</span>
                     </a>
                 </li>
                 <li>
                     <a routerLink="/dashboard/trainstation" routerLinkActive="custom-active">
-                        <i class="fa fa-clone" aria-hidden="true"></i>
+                        <i class="fa fa-clone fa-fw" aria-hidden="true"></i>
                         <span>TrainStation</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-anchor" aria-hidden="true"></i>
+                        <i class="fa fa-anchor fa-fw" aria-hidden="true"></i>
                         <span>Anchor</span>
                     </a>
                 </li>
@@ -82,37 +82,30 @@
 
                 <li>
                     <a routerLink="/dashboard/user" routerLinkActive="custom-active">
-                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-user fa-fw" aria-hidden="true"></i>
                         <span>User</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <i class="fa fa-bell fa-fw" aria-hidden="true"></i>
                         <span>Bell</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" (click)="logout()">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <a href="javascript:void(0)" (click)="logout()">
+                        <i class="fa fa-sign-out fa-fw" aria-hidden="true"></i>
                         <span>Logout</span>
                     </a>
                 </li>
 
             </ul>
         </nav>
-
         <div class="leftFooter">
             lfooter
-
         </div>
-
-
     </div>
-
-
-
     <div id="content">
         <div id="right-content" [@contentAnimation]='openClose'>
             <router-outlet></router-outlet>
