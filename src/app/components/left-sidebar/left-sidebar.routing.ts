@@ -7,13 +7,18 @@ const routes: Routes = [{
     path: '', component: LeftSidebarComponent,
     canActivate: [AuthGuard],
     children: [
-        { path: 'dashboard', loadChildren: '../dashboard/dashboard.module#DashboardModule', canActivate: [AuthGuard] },
-        { path: 'train', loadChildren: '../train/train.module#TrainModule', canActivate: [AuthGuard] },
-        { path: 'trainstation', loadChildren: '../train-station/train-station.module#trainStationModule' },
-        { path: 'blank', loadChildren: '../blank/blank.module#blankModule' },
-        { path: 'home', loadChildren: '../home/home.module#HomeModule' },
-        { path: 'userPlan', loadChildren: '../userplan/userplan.module#UserplanModule' },
-        { path: 'user', loadChildren: '../user/user.module#UserModule' }
+        {
+            path: 'dashboard', loadChildren: '../dashboard/dashboard.module#DashboardModule', canActivate: [AuthGuard],
+            children: [
+                { path: 'home', loadChildren: '../home/home.module#HomeModule' },
+                { path: 'train', loadChildren: '../train/train.module#TrainModule', canActivate: [AuthGuard] },
+                { path: 'trainstation', loadChildren: '../train-station/train-station.module#trainStationModule' },
+                { path: 'blank', loadChildren: '../blank/blank.module#blankModule' },
+                { path: 'userPlan', loadChildren: '../userplan/userplan.module#UserplanModule' },
+                { path: 'user', loadChildren: '../user/user.module#UserModule' }
+            ]
+        },
+       
 
     ]
 }
