@@ -7,13 +7,13 @@ const routes: Routes = [{
     path: '', component: LeftSidebarComponent,
     canActivate: [AuthGuard],
     children: [
-        { path: 'dashboard', loadChildren: './app/components/dashboard/dashboard.module#DashboardModule',canActivate: [AuthGuard] },
-        { path: 'trains', loadChildren: './app/components/trains/trains.module#trainsModule',canActivate: [AuthGuard]},
-        { path: 'train-station', loadChildren: './app/components/train-station/train-station.module#trainStationModule'},
-        { path: 'blank', loadChildren: './app/components/blank/blank.module#blankModule'},
-        { path: 'userPlan', loadChildren: './app/components/userplan/userplan.module#UserplanModule'},
-        { path: 'user', loadChildren: './app/components/user/user.module#UserModule'}
-       
+        { path: 'dashboard', loadChildren: '../dashboard/dashboard.module#DashboardModule', canActivate: [AuthGuard] },
+        { path: 'trains', loadChildren: '../trains/trains.module#TrainsModule', canActivate: [AuthGuard] },
+        { path: 'train-station', loadChildren: '../train-station/train-station.module#trainStationModule' },
+        { path: 'blank', loadChildren: '..//blank/blank.module#blankModule' },
+        { path: 'userPlan', loadChildren: '../userplan/userplan.module#UserplanModule' },
+        { path: 'user', loadChildren: '../user/user.module#UserModule' }
+
     ]
 }
 ];
