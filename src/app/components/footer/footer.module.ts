@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RegisterComponent } from './register.component';
-import { RegisterRouting } from './register.routing';
+import { FooterComponent } from './footer.component';
+import { footerRouting } from './footer.routing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   imports: [
     CommonModule,
-    RegisterRouting,
+    footerRouting,
     BrowserAnimationsModule
   ],
   declarations: [
-    RegisterComponent,
+    FooterComponent,
   ]
 })
-export class RegisterModule {
+export class footerModule {
 
 }
