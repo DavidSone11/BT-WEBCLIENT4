@@ -45,11 +45,17 @@ nav ul li i {
 .nav-left input[type="search"] {
     outline: none;
     background: transparent;
-    width: 300px;
+    width: 150px;
     -moz-border-radius: 15px;
     border-radius: 15px;
     border: solid 1px rgb(64, 95, 125);
     padding: 5px;
+    color:#fff;
+    transition: 0.8s all ease;
+}
+
+.nav-left input[type="search"]:focus {
+    width: 250px;
 }
 
 .nav-left ul li {
