@@ -35,3 +35,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## ng server options
 1. ng build --prod
 2. ng serve --aot
+
+# craete directive in NG4
+1. ng g directive directives/states --module=app.module
+2. ng g component component/compname --module=app.module
+3. ng g pipes pipes/pipename --module=app.module
+4. ng g service services/servicename --module=app.module
+5. ng g class classes/classname --module=app.module
+6. ng g guard guards/guardname --module=app.module
+7. ng g interface interfaces/interfacename --module=app.module
+8. ng g enum enums/enumname --module=app.module
+9. ng g module modules/modulename --module=app.module
