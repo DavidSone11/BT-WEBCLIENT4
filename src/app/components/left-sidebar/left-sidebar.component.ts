@@ -22,9 +22,9 @@ import {
 
 
       )),
-      state('inactive', style({ 
+      state('inactive', style({
         marginLeft: '-200px',
-        transition:'0.8s all'  
+        transition: '0.8s all'
       })),
       //transition('inactive => active', animate('2s all')),
       //transition('active => inactive', animate('2s all'))
@@ -38,9 +38,9 @@ import {
 
 
       )),
-      state('inactive', style({ 
+      state('inactive', style({
         margin: '0px',
-        transition:'0.8s all'  
+        transition: '0.8s all'
       })),
     ])
   ]
@@ -50,7 +50,7 @@ export class LeftSidebarComponent implements OnInit {
   openClose: string = 'active';
   constructor(private router: Router, private route: ActivatedRoute,
   ) {
-   
+
   }
 
   ngOnInit() {
@@ -61,8 +61,8 @@ export class LeftSidebarComponent implements OnInit {
 
   }
 
-  logout(){
-    //localStorage.removeItem('currentGame');
+  logout() {
+    localStorage.removeItem('currentGame');
     localStorage.clear();
     this.router.navigate(['/login']);
   }

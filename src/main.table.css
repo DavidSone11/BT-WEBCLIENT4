@@ -22,7 +22,10 @@ table.custom {
     height: 25px;
 
   }
-  
+  table.custom tbody tr:nth-child(odd){
+    background-color: rgb(204, 207, 211);
+    color: #fff;
+  }
   table.custom th {
     font-size: .85em;
     letter-spacing: .1em;

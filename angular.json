@@ -30,6 +30,7 @@
               "src/main.table.css",
               "src/main.dashboard.css",
               "src/main.loader.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
