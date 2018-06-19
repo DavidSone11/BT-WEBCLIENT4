@@ -1,4 +1,20 @@
 <div>
     <span States>blank works!</span>
+    <div id="loader" class="loader" *ngIf="isloading"></div>
+
+    <table class="custom">
+        <tr>
+            <th>SLNO.</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>BODY</th>
+        </tr>
+        <tr *ngFor="let item of commentsList">
+            <td>{{item.postId}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.body}}</td>
+        </tr>
+
+    </table>
 </div>
-  
