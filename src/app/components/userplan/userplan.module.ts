@@ -15,4 +15,4 @@ import { UserPlanRouting } from './userplan.routing';
 
   ]
 })
-export class UserplanComponentModule { }
+export class UserplanModule { }

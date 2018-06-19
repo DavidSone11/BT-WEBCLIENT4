@@ -3,16 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { BlankComponent } from './blank.component';
 
-import { BlankComponentRouting } from './blank.component.routing';
+import { BlankRouting } from './blank.routing';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    BlankComponentRouting
+    BlankRouting
   ],
   declarations: [
     BlankComponent,
   ]
 })
-export class blankComponentModule { }
+export class blankModule { }

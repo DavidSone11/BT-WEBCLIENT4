@@ -13,6 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TrainsComponent,
   ]
 })
-export class RegisterModule {
+export class trainsModule {
 
 }

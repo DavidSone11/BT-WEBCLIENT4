@@ -15,4 +15,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
     ]
 })
-export class UserComponentModule { }
+export class UserModule { }

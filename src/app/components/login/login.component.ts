@@ -10,11 +10,13 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   enable: boolean = false;
-  username: string = 'admin';
-  password: string = 'admin'
+  username: string = 'root';
+  password: string = 'root123'
+  role: string = 'admin'
+  token: string;
   constructor(private router: Router, private route: ActivatedRoute,
   ) {
-
+    this.token = "CpzUMHyMPPtmp8gW8EhTxlzuQA3o8ahx";
   }
 
   ngOnInit() {
@@ -22,10 +24,10 @@ export class LoginComponent implements OnInit {
 
   login() {
 
-    console.log("dasd");
-    localStorage.setItem("username", "santosh");
-    localStorage.setItem("role", "admin");
-    localStorage.setItem("token", "CpzUMHyMPPtmp8gW8EhTxlzuQA3o8ahx");
+    localStorage.setItem("username", this.username);
+    localStorage.setItem("password", this.password);
+    localStorage.setItem("role", this.role);
+    localStorage.setItem("token", this.token);
     this.router.navigate(['/dashboard']);
   }
 
