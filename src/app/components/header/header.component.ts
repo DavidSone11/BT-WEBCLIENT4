@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LeftSidebarComponent } from '../left-sidebar/left-sidebar.component';
 
 @Component({
   selector: 'app-header',
@@ -7,19 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  openClose: string = 'open';
-  search:string;
-  constructor() { }
+
+  search: string;
+  constructor(private leftSidebarComponent: LeftSidebarComponent) { }
 
   ngOnInit() {
-    
-  }
-
-  toggleSidebar(): void {
-    this.openClose = (this.openClose === 'open') ? 'close' : 'open';
-    console.log("dsadasd"+this.openClose);
 
   }
- 
+
+  openCloseSidebar(): void {
+  this.leftSidebarComponent.toggleSidebar();
+
+  }
+
 
 }
