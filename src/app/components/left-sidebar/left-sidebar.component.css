@@ -146,8 +146,9 @@
 }
 
 .custom-active {
-    border: 1px solid greenyellow;
-    border-left-color:  greenyellow;
+    background: rgba(52, 73, 94, .44);
+    width: 100%;
+    
 }
 
 @media (max-width: 768px) {

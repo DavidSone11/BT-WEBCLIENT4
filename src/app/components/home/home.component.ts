@@ -10,12 +10,20 @@ import { HttpClient } from '@angular/common/http';
 export class HomeComponent implements OnInit {
 
   commentsList: object;
+  isloading: boolean = false;
   constructor(private http: HttpClient) {
   }
   ngOnInit(): void {
-    this.http.get('https://jsonplaceholder.typicode.com/comments').subscribe(data => {
-      this.commentsList = data;
-      console.log(this.commentsList);
-    });
+    this.isloading = true;
+
+    setTimeout(() => {
+      this.http.get('https://jsonplaceholder.typicode.com/comments').subscribe(data => {
+        this.commentsList = data;
+        this.isloading = false;
+      });
+    }, 500);
+
+
+
   }
 }
