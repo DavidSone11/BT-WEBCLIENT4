@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app.routes';
 import { PageNotFoundComponent } from './components/page-not-found.component';
 import { AuthModule } from './auth.module';
+import { CustomdropdownDirective } from './directives/customdropdown.directive';
 
 
 
@@ -25,6 +26,7 @@ export class AppComponent {
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    CustomdropdownDirective,
    
   ],
   imports: [
