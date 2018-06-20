@@ -15,9 +15,7 @@ const routes: Routes = [{
                 { path: 'userPlan', loadChildren: '../userplan/userplan.module#UserplanModule' },
                 { path: 'train', loadChildren: './train/train.module#TrainModule', canActivate: [AuthGuard] },
                 { path: 'trainstation', loadChildren: './train-station/train-station.module#trainStationModule' },
-                { path: 'charts', loadChildren: '../charts/charts.module#ChartModule' },
-
-
+                { path: 'charts', loadChildren: '../charts/charts.module#nChartsModule' },
                 { path: 'user', loadChildren: './user/user.module#UserModule' }
             ]
         },

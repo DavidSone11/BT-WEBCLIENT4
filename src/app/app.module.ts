@@ -10,7 +10,7 @@ import { AppRoutingModule } from './app.routes';
 import { PageNotFoundComponent } from './components/page-not-found.component';
 import { AuthModule } from './auth.module';
 import { CustomdropdownDirective } from './directives/customdropdown.directive';
-import { ChartComponent } from './components/chart/chart.component';
+
 
 
 
@@ -28,7 +28,7 @@ export class AppComponent {
     AppComponent,
     PageNotFoundComponent,
     CustomdropdownDirective,
-    ChartComponent,
+    
    
   ],
   imports: [
