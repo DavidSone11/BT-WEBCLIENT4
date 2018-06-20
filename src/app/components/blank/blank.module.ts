@@ -11,7 +11,7 @@ import { BlankRouting } from './blank.routing';
   imports: [
     CommonModule,
     BlankRouting
-    
+
   ],
   declarations: [
     BlankComponent,
