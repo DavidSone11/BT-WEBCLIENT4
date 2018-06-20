@@ -50,7 +50,7 @@ nav ul li i {
     border-radius: 15px;
     border: solid 1px rgb(64, 95, 125);
     padding: 5px;
-    color:#fff;
+    color: #fff;
     transition: 0.8s all ease;
     height: 25px;
 }
@@ -102,6 +102,34 @@ nav ul li i {
     vertical-align: middle;
     background-color: #777;
     border-radius: 10px;
+}
+
+.nav-right ul ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-right ul li ul li {
+    width: 35px;
+    height: 160px;
+    float: left;
+    background: #000;
+    opacity: 0.8;
+    line-height: 40px;
+    text-align: center;
+ 
+}
+.nav-right ul li ul li {
+    display: inline-block;
+}
+
+.nav-right ul li ul li a {
+    text-decoration: none;
+    color:#fff;
+    /* display: block; */
+ 
 }
 
 @media (max-width: 768px) {
