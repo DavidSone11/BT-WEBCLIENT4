@@ -24,7 +24,7 @@ import {
 
       )),
       state('inactive', style({
-        marginLeft: '-200px',
+        marginLeft: '-180px',
         transition: '0.8s all'
       })),
       //transition('inactive => active', animate('2s all')),

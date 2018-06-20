@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { routerTransition } from '../../router.animations';
 @Component({
   selector: 'app-blank',
   templateUrl: './blank.component.html',
-  styleUrls: ['./blank.component.scss']
+  styleUrls: ['./blank.component.scss'],
+  animations: [routerTransition()]
 })
 export class BlankComponent implements OnInit {
 
