@@ -4,13 +4,14 @@ import { CommonModule } from '@angular/common';
 import { BlankComponent } from './blank.component';
 
 import { BlankRouting } from './blank.routing';
-
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    BlankRouting
+    BlankRouting,
+    ChartsModule
 
   ],
   declarations: [
