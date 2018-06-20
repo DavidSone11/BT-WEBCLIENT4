@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
 import { DashBoardRouting } from './dasboard.routing';
-import { StatesDirective } from '../../directives/states.directive';
+import { StatModule } from '../../modules/stat/stat.module';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -11,7 +12,7 @@ import { StatesDirective } from '../../directives/states.directive';
   ],
   declarations: [
     DashboardComponent,
-    StatesDirective
+    StatModule
   ]
 })
 export class DashboardModule {
