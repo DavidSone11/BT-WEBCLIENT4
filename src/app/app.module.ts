@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule,NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
@@ -32,7 +32,6 @@ export class AppComponent {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule, 
     FormsModule,
     ReactiveFormsModule,
     AuthModule,
