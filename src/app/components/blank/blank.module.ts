@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { BlankComponent } from './blank.component';
 
 import { BlankRouting } from './blank.routing';
-import { StatesDirective } from '../../directives/states.directive';
+
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { StatesDirective } from '../../directives/states.directive';
   ],
   declarations: [
     BlankComponent,
-    StatesDirective
+
   ]
 })
 export class blankModule { }
