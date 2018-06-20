@@ -1,7 +1,6 @@
 <div [@routerTransition]>
-    <div class="page-header">
-        <h1>Home</h1>
-    </div>
+        <app-page-header [heading]="'Charts'" [icon]="'fa-bar-chart-o'"></app-page-header>
+
     <div class="row">
         <div class="col-xl-3 col-lg-6">
             <app-stat [bgClass]="'primary'" [icon]="'fa-comments'" [count]="26" [label]="'New Comments!'"></app-stat>
