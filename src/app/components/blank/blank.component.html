@@ -1,29 +1,38 @@
-<div>
-    <!-- <span States class="page-header">blank Page!</span> -->
-
+<div [@routerTransition]>
     <div class="page-header">
-        Dashboard > Blank
+        <h1 States>Blank</h1>
     </div>
 
     <!-- <div class="alert alert-success">
         <strong>Success!</strong> Indicates a successful or positive action.
       </div> -->
 
-    <div id="loader" class="loader" *ngIf="isloading"></div>
+
 
     <table class="custom">
-        <tr>
-            <th>SLNO.</th>
-            <th>NAME</th>
-            <th>EMAIL</th>
-            <th>BODY</th>
-        </tr>
-        <tr *ngFor="let item of commentsList">
-            <td>{{item.postId}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.email}}</td>
-            <td>{{item.body}}</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>SLNO.</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>BODY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of commentsList">
+                <td>{{item.postId}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.body}}</td>
+            </tr>
+        </tbody>
+        <tbody *ngIf="isloading">
+            <tr style="height:200px">
+                <td colspan="9" class="text-center">
+                    <div id="loader" class="loader" *ngIf="isloading"></div>
+                </td>
+            </tr>
+        </tbody>
 
     </table>
 </div>
