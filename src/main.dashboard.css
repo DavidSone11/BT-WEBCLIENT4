@@ -24,8 +24,8 @@ body{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 34px 50px;
-    margin: 13px 0 0 181px;
+    padding: 0px 30px;
+    margin: 0px 0 0 181px;
     
 }
 
@@ -73,3 +73,9 @@ body{
       height: 26px;
     }
   }
+
+  .page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
