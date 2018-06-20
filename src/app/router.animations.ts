@@ -1,10 +1,19 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-export function routerTransition() {
-    return slideToTop();
-    // return slideToRight();
+export function slideToRightTransition() {
+    return slideToRight();
 }
 
+export function slideToTopTransition() {
+    return slideToTop();
+}
+export function slideToLeftTransition() {
+    return slideToLeft();
+}
+export function slideToBottomTransition() {
+    return slideToBottom();
+
+}
 export function slideToRight() {
     return trigger('routerTransition', [
         state('void', style({})),
@@ -56,11 +65,11 @@ export function slideToTop() {
         state('*', style({})),
         transition(':enter', [
             style({ transform: 'translateY(100%)' }),
-            animate('0.5s ease-in-out', style({ transform: 'translateY(0%)' }))
+            animate('0.5s ease-in', style({ transform: 'translateY(0%)' }))
         ]),
         transition(':leave', [
             style({ transform: 'translateY(0%)' }),
-            animate('0.5s ease-in-out', style({ transform: 'translateY(-100%)' }))
+            animate('0.5s ease-out', style({ transform: 'translateY(-100%)' }))
         ])
     ]);
 }

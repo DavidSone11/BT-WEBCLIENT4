@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { routerTransition } from '../../router.animations';
+import { slideToTopTransition } from '../../router.animations';
 import {
   trigger,
   state,
@@ -13,8 +13,8 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    routerTransition()
-    ]
+    slideToTopTransition()
+  ]
 
 })
 export class HomeComponent implements OnInit {
