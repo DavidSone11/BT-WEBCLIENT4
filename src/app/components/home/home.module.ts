@@ -5,7 +5,9 @@ import { HomeRouting } from './home.routing';
 import { StatModule } from '../../modules/stat/stat.module';
 import { PageHeaderModule } from '../../modules/page-header/page-header.module';
 import { BreadCrumbModule } from '../../modules/bread-crumb/breadCrumb.module';
-import { ServerErrorModule } from '../server-error/server-error.module';
+import { ImageSliderModule } from '../../modules/image-slider/image-slider.module';
+import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -13,7 +15,11 @@ import { ServerErrorModule } from '../server-error/server-error.module';
     StatModule,
     PageHeaderModule,
     BreadCrumbModule,
-    ServerErrorModule
+    ImageSliderModule,
+    NgbCarouselModule.forRoot(),
+    NgbAlertModule.forRoot(),
+    
+
   ],
   declarations: [
     HomeComponent,
