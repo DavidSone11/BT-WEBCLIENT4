@@ -103,12 +103,12 @@
 
             <div class="nested-menu">
 
-                <a class="custom-list-group" (click)="addExpandClass('pages')">
+                <a class="custom-list-group" (click)="addExpandClass('pages')" >
                     <i class="fa fa-address-card-o" aria-hidden="true"></i>
                     <span>Elements</span>
                     <i class="fa fa-plus"></i>
                 </a>
-                <li class="nested" [class.expand]="showMenu === 'pages'">
+                <li class="nested" [class.expand]="showMenu === 'pages'" routerLink="/dashboard/elements" routerLinkActive="custom-active">
                     <ul class="submenu">
                         <li>
                             <a href="javascript:void(0)">
