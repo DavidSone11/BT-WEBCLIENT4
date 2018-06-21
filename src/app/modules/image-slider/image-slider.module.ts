@@ -3,12 +3,15 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'angular4-carousel';
 import { ImageSliderComponent } from './image-slider.component';
+
 
 @NgModule({
     imports: [
         CommonModule,
         RouterModule,
+        CarouselModule
         // NgbModule.forRoot(),
         // NgbCarouselModule.forRoot(),
         // NgbAlertModule.forRoot(),

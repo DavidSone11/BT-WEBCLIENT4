@@ -15,9 +15,7 @@ import { ImageSliderModule } from '../../modules/image-slider/image-slider.modul
     StatModule,
     PageHeaderModule,
     BreadCrumbModule,
-    ImageSliderModule,
-    
-
+    ImageSliderModule
   ],
   declarations: [
     HomeComponent,

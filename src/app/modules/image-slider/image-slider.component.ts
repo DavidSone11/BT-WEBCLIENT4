@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
 @Component({
   selector: 'app-image-slider',
   templateUrl: './image-slider.component.html',
@@ -9,6 +9,21 @@ export class ImageSliderComponent implements OnInit {
 
   public alerts: Array<any> = [];
   public sliders: Array<any> = [];
+  public imageSources: string[] = [
+    'assets/images/slider1.jpg',
+    'assets/images/slider1.jpg',
+    'assets/images/slider1.jpg'
+  ];
+
+  public config: ICarouselConfig = {
+    verifyBeforeLoad: true,
+    log: false,
+    animation: true,
+    animationType: AnimationConfig.SLIDE,
+    autoplay: true,
+    autoplayDelay: 2000,
+    stopAutoplayMinWidth: 768
+  };
   constructor() {
     this.sliders.push(
       {
