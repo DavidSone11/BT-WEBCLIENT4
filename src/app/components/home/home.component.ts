@@ -22,13 +22,12 @@ import {
 export class HomeComponent implements OnInit {
 
   router:any;
+  urlpart:string;
   constructor(private _router: Router,private activeRoute:ActivatedRoute ) {
     this.router = _router;
-    // console.log(this.router.url);
-    // console.log(activeRoute);
-    // console.log("santosh".truncate());
-    
-    console.log(this.router.url.checkRoute())
+    this.urlpart = this.router.url.checkRoute();
+    // console.log(this.urlpart);
+
   }
   ngOnInit() {
 

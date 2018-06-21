@@ -1,7 +1,7 @@
 interface String {
     makeUpperCase(): string;
     endsWith(suffix: string): boolean;
-    checkRoute():string[];
+    checkRoute(): string[];
 }
 
 
@@ -16,8 +16,15 @@ String.prototype.endsWith = function (suffix: string): boolean {
 
 
 String.prototype.checkRoute = function (): string[] {
-    var str: string = this;
-    return str.split("/");
+    var str: string;
+    var strPart = [];
+    str = this.split("/");
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] != "") {
+            strPart.push(str[i]);
+        }
+    }
+    return strPart;
 }
 
 
