@@ -6,11 +6,28 @@ import { LeftSidebarRouting } from './left-sidebar.routing';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 
+
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export const createTranslateLoader = (http: HttpClient) => {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+};
+
 @NgModule({
   imports: [
     CommonModule,
     LeftSidebarRouting,
-    
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
+
 
   ],
   declarations: [
