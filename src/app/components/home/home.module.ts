@@ -6,7 +6,7 @@ import { StatModule } from '../../modules/stat/stat.module';
 import { PageHeaderModule } from '../../modules/page-header/page-header.module';
 import { BreadCrumbModule } from '../../modules/bread-crumb/breadCrumb.module';
 import { ImageSliderModule } from '../../modules/image-slider/image-slider.module';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -15,7 +15,8 @@ import { ImageSliderModule } from '../../modules/image-slider/image-slider.modul
     StatModule,
     PageHeaderModule,
     BreadCrumbModule,
-    ImageSliderModule
+    ImageSliderModule,
+    NgbModule.forRoot()
   ],
   declarations: [
     HomeComponent,
