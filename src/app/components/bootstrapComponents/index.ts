@@ -11,3 +11,6 @@ export * from './tabs/tabs.component';
 export * from './rating/rating.component';
 export * from './tooltip/tooltip.component';
 export * from './timepicker/timepicker.component';
+export * from './timeline/timeline.component';
+export * from './notification/notification.component';
+export * from './chat/chat.component';
