@@ -15,4 +15,4 @@ import { elementRouting } from './elements.component.routing';
 
     ]
 })
-export class elementModule { }
+export class ElementModule { }
