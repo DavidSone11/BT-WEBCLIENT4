@@ -3,13 +3,21 @@
     <h1 class="page-header">
         {{heading}}
     </h1>
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <i class="fa fa-dashboard fa-fw fa-{{nSize}}x"></i>
-            <a href="Javascript:void(0)" [routerLink]="['/dashboard']">Dashboard</a>
+
+
+    <ol class="arrows">
+        <li>
+            <a href="#">Home</a>
         </li>
-        <li class="breadcrumb-item active">
-            <i class="fa {{icon}} fa-fw fa-{{nSize}}x"></i> {{heading}}</li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Clients</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
     </ol>
 
 </div>
