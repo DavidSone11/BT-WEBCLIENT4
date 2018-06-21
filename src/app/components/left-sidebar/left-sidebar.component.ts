@@ -11,7 +11,10 @@ import {
 @Component({
   selector: 'app-left-sidebar',
   templateUrl: './left-sidebar.component.html',
-  styleUrls: ['./left-sidebar.component.css'],
+  styleUrls: [
+    './left-sidebar.component.css',
+    './left-sidebar.component.scss'
+  ],
   animations: [
     trigger('sideMenuAnim', [
       state('active', style(
@@ -65,6 +68,41 @@ export class LeftSidebarComponent implements OnInit {
     localStorage.removeItem('currentGame');
     localStorage.clear();
     this.router.navigate(['/login']);
+  }
+
+  isActive: boolean = false;
+  showMenu: string = '';
+  pushRightClass: string = 'push-right';
+
+
+
+  eventCalled() {
+    this.isActive = !this.isActive;
+  }
+
+  addExpandClass(element: any) {
+    if (element === this.showMenu) {
+      this.showMenu = '0';
+    } else {
+      this.showMenu = element;
+    }
+  }
+
+  isToggled(): boolean {
+    const dom: Element = document.querySelector('body');
+    return dom.classList.contains(this.pushRightClass);
+  }
+
+
+
+  rltAndLtr() {
+    const dom: any = document.querySelector('body');
+    dom.classList.toggle('rtl');
+  }
+
+
+  onLoggedout() {
+    localStorage.removeItem('isLoggedin');
   }
 
 }

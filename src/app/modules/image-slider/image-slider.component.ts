@@ -12,7 +12,7 @@ export class ImageSliderComponent implements OnInit {
   public sliders: Array<any> = [];
 
   constructor(config: NgbCarouselConfig, ) {
-    config.interval = 100;
+    config.interval = 10000;
     config.wrap = false;
     config.keyboard = false;
     this.sliders.push(

@@ -54,7 +54,8 @@ https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/
 * BreadCrumb 
 https://codepen.io/team/css-tricks/pen/xRmmdr
 * ng Bootstrap
-https://ng-bootstrap.github.io/#/components/carousel/examples
+1. https://ng-bootstrap.github.io/#/components/carousel/examples
+3. https://github.com/ng-bootstrap/ng-bootstrap#demo
 
 * Books 
 https://basarat.gitbooks.io/typescript/content/docs/types/lib.d.ts.html
