@@ -12,8 +12,8 @@ import {
   selector: 'app-left-sidebar',
   templateUrl: './left-sidebar.component.html',
   styleUrls: [
-    './left-sidebar.component.css',
-    './left-sidebar.component.scss'
+     './left-sidebar.component.css',
+    // './left-sidebar.component.scss'
   ],
   animations: [
     trigger('sideMenuAnim', [

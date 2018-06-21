@@ -2,13 +2,6 @@
     <app-header></app-header>
     <div class="left-Sidebar" [@sideMenuAnim]='openClose'>
         <nav>
-            <div class="navbar nav_title" style="border: 0;">
-                <a href="index.html" class="site_title">
-                    <i class="fa fa-paw"></i>
-                    <span> Gentelella</span>
-                </a>
-            </div>
-            <div class="clearFix"></div>
             <div class="profile clearFix">
                 <div class="profile_pic">
                     <img src="../../../assets/profile.jpg" alt="no image found" class="img-circle profile_img">
@@ -106,14 +99,12 @@
                         <span>Logout</span>
                     </a>
                 </li>
+            </ul>
 
-                <div class="nested-menu">
-                        
-                    <a class="list-group" (click)="addExpandClass('pages')">
-                       
-                        <p>Elements
-                            <i class="fa fa-plus"></i>
-                        </p>
+            <div class="nested-menu">
+
+                    <a class="custom-list-group" (click)="addExpandClass('pages')">
+                       <span>Elements</span>  <i class="fa fa-plus"></i>
                     </a>
                     <li class="nested" [class.expand]="showMenu === 'pages'">
                         <ul class="submenu">
@@ -136,7 +127,7 @@
                     </li>
                 </div>
 
-            </ul>
+
         </nav>
         <div class="leftFooter">
             lfooter
