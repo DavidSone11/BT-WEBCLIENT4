@@ -103,29 +103,54 @@
 
             <div class="nested-menu">
 
-                    <a class="custom-list-group" (click)="addExpandClass('pages')">
-                       <span>Elements</span>  <i class="fa fa-plus"></i>
-                    </a>
-                    <li class="nested" [class.expand]="showMenu === 'pages'">
-                        <ul class="submenu">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span>Submenu</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span>Submenu</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span>Submenu</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </div>
+                <a class="custom-list-group" (click)="addExpandClass('pages')">
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                    <span>Elements</span>
+                    <i class="fa fa-plus"></i>
+                </a>
+                <li class="nested" [class.expand]="showMenu === 'pages'">
+                    <ul class="submenu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>
+                                    <i class="fa fa-address-card-o" aria-hidden="true"></i> Charts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>
+                                    <i class="fa fa-address-card-o" aria-hidden="true"></i> Tables</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>
+                                    <i class="fa fa-address-card-o" aria-hidden="true"></i>Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>
+                                    <i class="fa fa-address-card-o" aria-hidden="true"></i> Elements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>
+                                    <i class="fa fa-address-card-o" aria-hidden="true"></i> Grids</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>
+                                    <i class="fa fa-address-card-o" aria-hidden="true"></i> Components</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </div>
 
 
         </nav>
