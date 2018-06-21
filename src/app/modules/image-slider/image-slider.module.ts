@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselModule } from 'angular4-carousel';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { ImageSliderComponent } from './image-slider.component';
 
 
@@ -11,10 +11,9 @@ import { ImageSliderComponent } from './image-slider.component';
     imports: [
         CommonModule,
         RouterModule,
-        CarouselModule
-        // NgbModule.forRoot(),
-        // NgbCarouselModule.forRoot(),
-        // NgbAlertModule.forRoot(),
+        NgbModule.forRoot(),
+        NgbCarouselModule.forRoot(),
+        NgbAlertModule.forRoot(),
     ],
     declarations: [ImageSliderComponent],
     exports: [ImageSliderComponent]
