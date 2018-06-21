@@ -17,7 +17,7 @@ export class BreadCrumbComponent implements OnInit {
         
      }
      ngAfterViewInit() {
-        console.log(this.urlPart);
+        
       }
 
     ngOnInit() { }

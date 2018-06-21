@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   constructor(private _router: Router,private activeRoute:ActivatedRoute ) {
     this.router = _router;
     this.urlpart = this.router.url.checkRoute();
-    // console.log(this.urlpart);
+    
 
   }
   ngOnInit() {

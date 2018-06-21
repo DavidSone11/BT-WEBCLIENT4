@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { slideToTopTransition } from '../../router.animations';
+import {Router,ActivatedRoute} from '@angular/router'
+import "../../prototypes/format.prototype"
+
 @Component({
   selector: 'app-blank',
   templateUrl: './blank.component.html',
@@ -11,8 +14,17 @@ export class BlankComponent implements OnInit {
 
   commentsList: object;
   isloading: boolean = false;
-  constructor(private http: HttpClient) {
+
+  router:any;
+  urlpart:string;
+  constructor(private _router: Router,private activeRoute:ActivatedRoute,private http: HttpClient ) {
+    this.router = _router;
+    this.urlpart = this.router.url.checkRoute();
+
+
   }
+
+  
   ngOnInit(): void {
     this.isloading = true;
 
