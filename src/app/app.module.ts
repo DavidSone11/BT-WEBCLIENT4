@@ -14,6 +14,7 @@ import { CustomdropdownDirective } from './directives/customdropdown.directive';
 
 
 
+
 @Component({
   selector: 'app-root',
   template: '<router-outlet></router-outlet>'
@@ -28,6 +29,7 @@ export class AppComponent {
     AppComponent,
     PageNotFoundComponent,
     CustomdropdownDirective,
+    
     
    
   ],
