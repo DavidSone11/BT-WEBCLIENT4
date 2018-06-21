@@ -69,6 +69,8 @@
     height: 55px;
     margin: 0;
     padding-left: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .clearFix:after {
@@ -90,21 +92,9 @@
     padding: 0 0 15px 62px;
 }
 
-.left-Sidebar .site_title {
-    font-weight: 400;
-    font-size: 22px;
-    width: 100%;
-    line-height: 59px;
-    display: block;
-    height: 55px;
-    margin: 0;
-    padding-left: 10px;
-}
 
-.left-Sidebar .site_title {
-    color: #fff;
-    text-decoration: none;
-}
+
+
 
 .left-Sidebar .site_title i {
     border: 1px solid #EAEAEA;
