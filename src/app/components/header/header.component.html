@@ -20,30 +20,78 @@
                 <li>
                     <div class="dropdown">
                         <a class="dropbtn">
-                                <i class="fa fa-user" aria-hidden="true"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
                         </a>
                         <div class="dropdown-content">
-                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
-                            <a href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i>Inbox</a>
-                            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Setting</a>
-                            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                            <a href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                            <a href="#">
+                                <i class="fa fa-address-book-o" aria-hidden="true"></i>Inbox</a>
+                            <a href="#">
+                                <i class="fa fa-cog" aria-hidden="true"></i>Setting</a>
+                            <a href="#">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
                         </div>
                     </div>
                 </li>
 
                 <li>
-                        <div class="dropdown">
-                                <a class="dropbtn">
-                                        <i class="fa fa-bell" aria-hidden="true"></i>
-                                </a>
-                                <div class="dropdown-content">
-                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
-                                    <a href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i>Inbox</a>
-                                    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Setting</a>
-                                    <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
-                                </div>
-                            </div>
+                    <div class="dropdown">
+                        <a class="dropbtn">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                            <a href="#">
+                                <i class="fa fa-address-book-o" aria-hidden="true"></i>Inbox</a>
+                            <a href="#">
+                                <i class="fa fa-cog" aria-hidden="true"></i>Setting</a>
+                            <a href="#">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                        </div>
+                    </div>
                 </li>
+
+
+                <li>
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">
+
+                            <i class="fa fa-language"></i> {{ 'Language' }}
+                            <b class="caret"></b>
+
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a  href="javascript:void(0)" (click)="changeLang('en')">
+                                {{ 'English' | translate }}
+                            </a>
+                            <a  href="javascript:void(0)" (click)="changeLang('fr')">
+                                {{ 'French' | translate }}
+                            </a>
+                            <a  href="javascript:void(0)" (click)="changeLang('ur')">
+                                {{ 'Urdu' | translate }}
+                            </a>
+                            <a  href="javascript:void(0)" (click)="changeLang('es')">
+                                {{ 'Spanish' | translate }}
+                            </a>
+                            <a  href="javascript:void(0)" (click)="changeLang('it')">
+                                {{ 'Italian' | translate }}
+                            </a>
+                            <a  href="javascript:void(0)" (click)="changeLang('fa')">
+                                {{ 'Farsi' | translate }}
+                            </a>
+                            <a  href="javascript:void(0)" (click)="changeLang('de')">
+                                {{ 'German' | translate }}
+                            </a>
+                            <a  href="javascript:void(0)" (click)="changeLang('zh-CHS')">
+                                {{ 'Simplified Chinese' | translate }}
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
                 <li>
                     <a href="#">
                         <i class="fa fa-tasks" aria-hidden="true"></i>
