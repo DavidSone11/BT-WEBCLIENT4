@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
   router:any;
   urlpart:string;
   public alerts: Array<any> = [];
+  isLoad:boolean = false;
   constructor(private _router: Router,private activeRoute:ActivatedRoute ) {
     this.router = _router;
     this.urlpart = this.router.url.checkRoute();
@@ -54,6 +55,11 @@ export class HomeComponent implements OnInit {
   public closeAlert(alert: any) {
     const index: number = this.alerts.indexOf(alert);
     this.alerts.splice(index, 1);
+}
+
+public check(){
+  console.log("adas");
+  this.isLoad = !this.isLoad;
 }
 
 }

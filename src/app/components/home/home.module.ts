@@ -7,7 +7,7 @@ import { PageHeaderModule } from '../../modules/page-header/page-header.module';
 import { BreadCrumbModule } from '../../modules/bread-crumb/breadCrumb.module';
 import { ImageSliderModule } from '../../modules/image-slider/image-slider.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { LaddaModule } from 'angular2-ladda';
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +16,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PageHeaderModule,
     BreadCrumbModule,
     ImageSliderModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    LaddaModule.forRoot({
+      style: "contract",
+      spinnerSize: 40,
+      spinnerColor: "red",
+      spinnerLines: 12
+  })
   ],
   declarations: [
     HomeComponent,
