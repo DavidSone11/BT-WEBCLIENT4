@@ -8,13 +8,13 @@ import { PageHeaderModule } from '../../modules/index';
 
 import { BreadCrumbModule } from '../../modules/bread-crumb/breadCrumb.module';
 
+
 @NgModule({
   imports: [
     CommonModule,
     BlankRouting,
     PageHeaderModule,
-    BreadCrumbModule
-    
+    BreadCrumbModule,
 
   ],
   declarations: [

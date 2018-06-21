@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerErrorComponent implements OnInit {
 
-  constructor() { }
+  imagePath:string;
+  constructor() { 
+    this.imagePath = "../../../assets/serverError.png"
+  }
 
   ngOnInit() {
   }

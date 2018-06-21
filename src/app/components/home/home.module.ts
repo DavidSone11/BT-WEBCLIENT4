@@ -5,13 +5,15 @@ import { HomeRouting } from './home.routing';
 import { StatModule } from '../../modules/stat/stat.module';
 import { PageHeaderModule } from '../../modules/page-header/page-header.module';
 import { BreadCrumbModule } from '../../modules/bread-crumb/breadCrumb.module';
+import { ServerErrorModule } from '../server-error/server-error.module';
 @NgModule({
   imports: [
     CommonModule,
     HomeRouting,
     StatModule,
     PageHeaderModule,
-    BreadCrumbModule
+    BreadCrumbModule,
+    ServerErrorModule
   ],
   declarations: [
     HomeComponent,
