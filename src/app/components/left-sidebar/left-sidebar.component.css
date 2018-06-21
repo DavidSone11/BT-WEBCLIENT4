@@ -152,8 +152,9 @@
   }
 
 .custom-active {
-    background: rgba(52, 73, 94, .44);
+    background: rgba(0, 0, 0, 0.1);
     width: 100%;
+    padding: 10px 0px;
 }
 
 /* .left-Sidebar .nested-menu{
