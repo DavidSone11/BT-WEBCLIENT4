@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { slideToTopTransition } from '../../router.animations';
+import {Router,ActivatedRoute} from '@angular/router'
+import "../../prototypes/format.prototype"
 import {
   trigger,
   state,
@@ -19,10 +21,15 @@ import {
 })
 export class HomeComponent implements OnInit {
 
-
-  constructor() {
+  router:any;
+  constructor(private _router: Router,private activeRoute:ActivatedRoute ) {
+    this.router = _router;
+    // console.log(this.router.url);
+    // console.log(activeRoute);
+    // console.log("santosh".truncate());
+    
+    console.log(this.router.url.checkRoute())
   }
-
   ngOnInit() {
 
   }
