@@ -62,3 +62,5 @@ https://basarat.gitbooks.io/typescript/content/docs/types/lib.d.ts.html
 
 #How to install only “devDependencies” using npm
 * npm install --only=dev
+
+https://embed.plnkr.co/plunk/8ppG4F
