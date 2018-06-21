@@ -59,3 +59,6 @@ https://codepen.io/team/css-tricks/pen/xRmmdr
 
 * Books 
 https://basarat.gitbooks.io/typescript/content/docs/types/lib.d.ts.html
+
+#How to install only “devDependencies” using npm
+* npm install --only=dev
