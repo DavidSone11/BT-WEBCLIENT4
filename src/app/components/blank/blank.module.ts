@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { BlankComponent } from './blank.component';
 
 import { BlankRouting } from './blank.routing';
+import { PageHeaderModule } from '../../modules/index';
 
 
 
@@ -11,6 +12,7 @@ import { BlankRouting } from './blank.routing';
   imports: [
     CommonModule,
     BlankRouting,
+    PageHeaderModule
     
 
   ],
