@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-    selector: 'app-page-header',
-    templateUrl: './page-header.component.html',
-    styleUrls: ['./page-header.component.scss']
+    selector: 'app-bread-crumb',
+    templateUrl: './breadCrumb.component.html',
+    styleUrls: ['./breadCrumb.component.scss']
 })
-export class PageHeaderComponent implements OnInit {
+export class BreadCrumbComponent implements OnInit {
     @Input() heading: string;
     @Input() icon: string;
     @Input() nSize: string;
