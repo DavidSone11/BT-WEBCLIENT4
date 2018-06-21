@@ -5,13 +5,12 @@ import { elementComponent } from './elements.component';
 
 const routes: Routes = [
   { path: '', component: elementComponent },
-  { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
-  { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
-  { path: 'forms', loadChildren: './form/form.module#FormModule' },
-  { path: 'bs-element', loadChildren: './bs-element/bs-element.module#BsElementModule' },
-  { path: 'grid', loadChildren: './grid/grid.module#GridModule' },
-  { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
-  { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' }
+  { path: 'charts', loadChildren: './bootstrapComponents/charts/charts.module#ChartsModule' },
+  { path: 'tables', loadChildren: './bootstrapComponents/tables/tables.module#TablesModule' },
+  { path: 'forms', loadChildren: './bootstrapComponents/form/form.module#FormModule' },
+  { path: 'bs-element', loadChildren: './bootstrapComponents/bs-element/bs-element.module#BsElementModule' },
+  { path: 'grid', loadChildren: './bootstrapComponents/grid/grid.module#GridModule' },
+  { path: 'blank-page', loadChildren: './bootstrapComponents/blank-page/blank-page.module#BlankPageModule' }
 ];
 
 @NgModule({
