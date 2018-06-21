@@ -53,6 +53,8 @@ https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/
 
 * BreadCrumb 
 https://codepen.io/team/css-tricks/pen/xRmmdr
+* ng Bootstrap
+https://ng-bootstrap.github.io/#/components/carousel/examples
 
-Books 
+* Books 
 https://basarat.gitbooks.io/typescript/content/docs/types/lib.d.ts.html
