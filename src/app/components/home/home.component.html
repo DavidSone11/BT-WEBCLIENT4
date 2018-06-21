@@ -1,7 +1,8 @@
 <div [@routerTransition]>
         <!-- <app-page-header [heading]="'home'" [icon]="'fa-home fa-fw'" [nSize]="'1'"></app-page-header> -->
 
-        <h1>Home</h1>
+    
+        <app-bread-crumb  [heading]="'home'"></app-bread-crumb>
     <div class="row">
         <div class="col-xl-3 col-lg-6">
             <app-stat [bgClass]="'primary'" [icon]="'fa-comments'" [count]="26" [label]="'New Comments!'"></app-stat>
