@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { slideToTopTransition } from '../../animations/router.animations';
+import { slideToTopTransition } from '../../_animations/router.animations';
 import {Router,ActivatedRoute} from '@angular/router'
-import "../../prototypes/format.prototype"
+import "../../_prototypes/format.prototype"
 import {
   trigger,
   state,

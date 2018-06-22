@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassword.component';
-import { PageNotFoundComponent } from './components/page-not-found.component';
+import { LoginComponent } from './_components/login/login.component';
+import { RegisterComponent } from './_components/register/register.component';
+import { ForgetpasswordComponent } from './_components/forgetpassword/forgetpassword.component';
+import { PageNotFoundComponent } from './_components/page-not-found.component';
 
 
 
