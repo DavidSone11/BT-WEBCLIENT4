@@ -1,6 +1,5 @@
-import { Component, OnInit, Input,ViewChild, AfterViewInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { HomeComponent } from '../../components/home/home.component';
+import { Component, OnInit, Input} from '@angular/core';
+
 
 @Component({
     selector: 'app-bread-crumb',
