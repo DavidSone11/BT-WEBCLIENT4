@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './_components/page-not-found.component';
 
 
 const mainRouteConfig: Routes = [
-  { path: '', loadChildren: '../app/components/left-sidebar/left-sidebar.module#LeftSidebarModule'},
+  { path: '', loadChildren: '../app/_components/left-sidebar/left-sidebar.module#LeftSidebarModule'},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'forget', component: ForgetpasswordComponent },
