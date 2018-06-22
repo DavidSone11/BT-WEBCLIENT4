@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRouting } from './home.routing';
-import { StatModule } from '../../modules/stat/stat.module';
-import { PageHeaderModule } from '../../modules/page-header/page-header.module';
-import { BreadCrumbModule } from '../../modules/bread-crumb/breadCrumb.module';
-import { ImageSliderModule } from '../../modules/image-slider/image-slider.module';
+import { StatModule } from '../../_modules/stat/stat.module';
+import { PageHeaderModule } from '../../_modules/page-header/page-header.module';
+import { BreadCrumbModule } from '../../_modules/bread-crumb/breadCrumb.module';
+import { ImageSliderModule } from '../../_modules/image-slider/image-slider.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LaddaModule } from 'angular2-ladda';
 @NgModule({
