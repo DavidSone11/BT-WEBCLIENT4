@@ -13,4 +13,4 @@ import { CustomTabsRouting } from './custom-tabs.routing';
 
   ]
 })
-export class blankModule { }
+export class customTabModule { }
