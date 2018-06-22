@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app.routes';
 import { PageNotFoundComponent } from './components/page-not-found.component';
 import { AuthModule } from './auth.module';
-import { CustomdropdownDirective } from './directives/customdropdown.directive';
+import { CustomdropdownDirective } from './_directives/customdropdown.directive';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
