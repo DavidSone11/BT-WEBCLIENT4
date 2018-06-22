@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { slideToTopTransition } from '../../router.animations';
+import { slideToTopTransition } from '../../animations/router.animations';
 import {Router,ActivatedRoute} from '@angular/router'
 import "../../prototypes/format.prototype"
 

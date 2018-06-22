@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { slideToTopTransition } from '../../router.animations';
+import { slideToTopTransition } from '../../animations/router.animations';
 
 @Component({
   selector: 'app-chart',
