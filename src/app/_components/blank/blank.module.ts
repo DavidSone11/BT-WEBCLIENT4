@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 import { BlankComponent } from './blank.component';
 
 import { BlankRouting } from './blank.routing';
-import { PageHeaderModule } from '../../modules/index';
+import { PageHeaderModule } from '../../_modules/index';
 
-import { BreadCrumbModule } from '../../modules/bread-crumb/breadCrumb.module';
+import { BreadCrumbModule } from '../../_modules/bread-crumb/breadCrumb.module';
 
 
 @NgModule({
