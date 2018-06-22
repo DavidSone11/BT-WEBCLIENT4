@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { slideToTopTransition } from '../../_animations/router.animations';
 import {Router,ActivatedRoute} from '@angular/router'
-import "../../prototypes/format.prototype"
+import "../../_prototypes/format.prototype"
 
 @Component({
   selector: 'app-userplan',
