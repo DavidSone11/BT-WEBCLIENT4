@@ -12,6 +12,7 @@ import { CustomdropdownDirective } from './_directives/customdropdown.directive'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CustomTabsComponent } from './_custom_components/custom-tabs/custom-tabs.component';
 
 
 
@@ -33,6 +34,7 @@ export const createTranslateLoader = (http: HttpClient) => {
     AppComponent,
     PageNotFoundComponent,
     CustomdropdownDirective,
+    CustomTabsComponent,
     
     
    
