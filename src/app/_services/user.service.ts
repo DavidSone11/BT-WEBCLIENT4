@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
  
-import { UserModel } from '../_models/User';
+import { UserModel } from '../../_models/User';
  
 @Injectable()
 export class UserService {

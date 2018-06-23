@@ -9,12 +9,12 @@ import {
     Headers,
     XHRBackend
 } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
+
 import 'rxjs/add/operator/map';
 import { Cookie } from 'ng2-cookies/ng2-cookies';
 import {
     globalApiSettings
-  } from '../_settings/settings.index';
+  } from "../../_settings/settings.index"
 
 class getCurrentDateInMin {
 
