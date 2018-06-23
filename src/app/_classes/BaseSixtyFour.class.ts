@@ -1,22 +1,21 @@
 
 interface IBase {
-      inputStr: string;
+
       outputStr: string;
-      encode(input: string): void;
+      encode(name: string): void;
       decoding(): void;
 }
 
 export class BaseSixtyFour implements IBase {
 
-      inputStr: string = "santosh";
+
       outputStr: string;
 
       BaseSixtyFourClass() {
 
       }
-      encode(input: string): void {
-
-            this.outputStr = btoa(this.inputStr)
+      encode(name: string): void {
+            console.log(btoa(name));
 
       }
       decoding(): void {

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { slideToTopTransition } from '../../_animations/router.animations';
 import { openClose } from '../../_animations/NewAnimations/openClose.animation';
-import {Router,ActivatedRoute} from '@angular/router'
-import "../../_prototypes/format.prototype"
+import {Router,ActivatedRoute} from '@angular/router';
+import "../../_prototypes/format.prototype";
+import {BaseSixtyFour} from "../../_classes/BaseSixtyFour.class";
 import {
   trigger,
   state,
@@ -30,6 +31,9 @@ export class HomeComponent implements OnInit {
   constructor(private _router: Router,private activeRoute:ActivatedRoute ) {
     this.router = _router;
     this.urlpart = this.router.url.checkRoute();
+    var baseSixFour = new BaseSixtyFour();
+
+    baseSixFour.encode("santosh");
 
     this.alerts.push(
       {

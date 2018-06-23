@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, AfterViewChecked } from '@angular/core';
-import { NgxPermissionsService } from 'ngx-permissions';
+//import { NgxPermissionsService } from 'ngx-permissions';
 import { HttpClient } from '@angular/common/http';
 import { UserService } from './user-plan.service';
 
@@ -34,16 +34,16 @@ export class UserPlanComponent implements OnInit {
     page: 1,
     limit: 10,
   }
-  constructor(private ngPremissionSvc: NgxPermissionsService,
-    private http: HttpClient, private _userService: UserService) {
-    this.dbpermissions = ["ADMIN", "GUEST", "EDITOR", "SUPER"];
+  //constructor(private ngPremissionSvc: NgxPermissionsService,
+  constructor(private http: HttpClient, private _userService: UserService) {
+    //this.dbpermissions = ["ADMIN", "GUEST", "EDITOR", "SUPER"];
   }
   ngAfterViewChecked() {
     //$(document.getElementById("wrapper")).css({"opacity": "0.5","background-color":"rgba(0,0,0,0.8)","width":"100%","height":"100%","position":"fixed","top":"0","bottom":"0"});
   }
 
   ngOnInit(): void {
-    this.ngPremissionSvc.loadPermissions(this.dbpermissions);
+    //this.ngPremissionSvc.loadPermissions(this.dbpermissions);
     this._loadallUserplanWithPromise();
   }
 

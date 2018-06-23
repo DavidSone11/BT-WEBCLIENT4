@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, RequestOptions, Headers, Request, RequestMethod } from '@angular/http';
-import { AuthHttp, AuthConfig } from 'angular2-jwt';
+
 //import { Observable } from 'rxjs/Rx';
 
 
