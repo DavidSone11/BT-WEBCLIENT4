@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
 import { Cookie } from 'ng2-cookies/ng2-cookies';
 import {
     globalApiSettings
-  } from "../../_settings/settings.index"
+  } from "../_settings/settings.index"
 
 class getCurrentDateInMin {
 
@@ -42,14 +42,14 @@ export class AuthenticateService {
     }
     logout() {
 
-        this._http
-            .get(globalApiSettings.logoutUri)
-            .map(successResponse => successResponse)
-            .subscribe(successResponse => {
-                this.removeAuthSession();
-            }, error => {
-                console.log(JSON.stringify(error.json()));
-            });
+        // this._http
+        //     .get(globalApiSettings.logoutUri)
+        //     .map(successResponse => successResponse)
+        //     .subscribe(successResponse => {
+        //         this.removeAuthSession();
+        //     }, error => {
+        //         console.log(JSON.stringify(error.json()));
+        //     });
 
 
     }
