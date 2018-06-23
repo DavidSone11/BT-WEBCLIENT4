@@ -10,46 +10,43 @@
     display: block;
     min-height: 100%;
     background-color: #222d32;
-    opacity: 1;
     box-shadow: 0 6px 15px 0px rgba(0, 0, 0, 0.6);
+    opacity: 1;
     height: 100%;
     transition: 0.8s all;
     
 }
 
-.left-Sidebar ul {
+.left-sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 60px 1px 0px 0px;    
+}
+
+.left-sidebar-menu>li {
+    position: relative;
     margin: 0;
     padding: 0;
 }
 
-.left-Sidebar ul li {
-    list-style-type: none;
-    display: flex;
-    padding:20px 5px 0 0;
-    transition: 0.8s all;
-}
-
-.left-Sidebar ul li a span {
-    padding: 0px 20px;
-}
-
-.left-Sidebar ul li:hover {
-    border-right: 5px solid #1ABB9C;
-}
-
-.left-Sidebar ul li a:hover {
-    color: #0000004d;
-}
-
-.left-Sidebar ul li a {
+.left-sidebar-menu>li>a {
+    padding: 12px 5px 12px 15px;
+    display: block;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    color: #fff;
     text-decoration: none;
-    color: #fff;
 }
 
-.left-Sidebar ul li i {
-    color: #fff;
-    font-size: 20px;
+.left-sidebar-menu>li>a>span{
+    padding: 0 10px;
 }
+
+.left-sidebar-menu>li>a>.fa {
+    width: 20px;
+}
+
+
 
 .left-Sidebar navbar .site_title {
     font-weight: 400;
@@ -63,6 +60,7 @@
     color: #fff;
     text-decoration: none;
 }
+
 
 .clearFix:after {
     clear: both;
