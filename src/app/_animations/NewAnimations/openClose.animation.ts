@@ -1,4 +1,4 @@
-import { trigger, state, style, transition, animate } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 export const openClose = trigger('openClose',[
       transition(":enter", [
         style({ opacity: 0 }),
