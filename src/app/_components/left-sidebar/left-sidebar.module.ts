@@ -5,6 +5,7 @@ import { LeftSidebarComponent } from './left-sidebar.component';
 import { LeftSidebarRouting } from './left-sidebar.routing';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { RightSidebarComponent } from '../right-sidebar/right-sidebar.component';
 
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -33,7 +34,8 @@ export const createTranslateLoader = (http: HttpClient) => {
   declarations: [
     LeftSidebarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RightSidebarComponent
   ]
 })
 export class LeftSidebarModule { }

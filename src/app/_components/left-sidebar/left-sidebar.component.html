@@ -29,7 +29,7 @@
 
                 <li>
                     <a routerLink="/dashboard/blank" routerLinkActive="custom-active">
-                        <i class="fa fa-black-tie fa-fw"></i>
+                        <i class="fa fa-envelope fa-fw"></i>
                         <span>{{'Blank'| translate}}</span>
                     </a>
                 </li>
@@ -158,7 +158,9 @@
             lfooter
         </div>
     </div>
+    <app-right-sidebar></app-right-sidebar>
     <section id="content">
+        
         <section id="right-content" [@contentAnimation]='openClose'>
             <router-outlet></router-outlet>
         </section>
