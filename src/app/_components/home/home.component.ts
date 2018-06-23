@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { slideToTopTransition } from '../../_animations/router.animations';
+import { openClose } from '../../_animations/NewAnimations/openClose.animation';
 import {Router,ActivatedRoute} from '@angular/router'
 import "../../_prototypes/format.prototype"
 import {
@@ -15,7 +16,8 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    slideToTopTransition()
+    slideToTopTransition(),
+    openClose
   ]
 
 })
