@@ -1,26 +1,28 @@
 
 interface IBase {
-      keyStr: string;
-      encode(input: string): string;
-      decoding(): string;
+      inputStr: string;
+      outputStr: string;
+      encode(input: string): void;
+      decoding(): void;
 }
 
 export class BaseSixtyFour implements IBase {
 
-      keyStr: string = "santosh";
+      inputStr: string = "santosh";
+      outputStr: string;
 
       BaseSixtyFourClass() {
 
       }
-      encode(input: string): string {
-            throw new Error("Method not implemented.");
-            //console.log(btoa(this.keyStr));
-            return "";
+      encode(input: string): void {
+
+            this.outputStr = btoa(this.inputStr)
+
       }
-      decoding(): string {
-            throw new Error("Method not implemented.");
-            //console.log(atob("eW91ciBlbmNvZGluZyB0ZXh0"));
-            return "";
+      decoding(): void {
+
+            atob(this.outputStr);
+
       }
 
 }

@@ -23,10 +23,11 @@ export class LoginService implements ILogin {
     }
 
     doLogin(username, password): boolean {
-        throw new Error("Method not implemented.");
+        
+        return true;
     }
     doLogout(): void {
-        throw new Error("Method not implemented.");
+        
         if (this.isLoggedIn) {
             this.isLoggedIn = false;
             localStorage.removeItem('username');
