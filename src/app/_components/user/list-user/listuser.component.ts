@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, RequestOptions, Headers, Request, RequestMethod } from '@angular/http';
-import { AuthHttp, AuthConfig } from 'angular2-jwt';
+// import { AuthHttp, AuthConfig } from 'angular2-jwt';
 //import { Observable } from 'rxjs/Rx';
 
 
-import { ToasterModule, ToasterService, ToasterConfig } from 'angular2-toaster';
+// import { ToasterModule, ToasterService, ToasterConfig } from 'angular2-toaster';
 
 @Component({
   selector: 'app-user',
@@ -19,9 +19,12 @@ export class ListUsersComponent implements OnInit {
   public rowsOnPage = 10;
   public sortBy = "email";
   public sortOrder = "asc";
-  private toasterService: ToasterService;
-  constructor(private http: Http, toasterService: ToasterService) {
-    this.toasterService = toasterService;
+  // private toasterService: ToasterService;
+  // constructor(private http: Http, toasterService: ToasterService) {
+  //   this.toasterService = toasterService;
+  // }
+  constructor(){
+
   }
   ngOnInit() {
     let url = 'http://localhost:4000/api/v1/new/admin/getUsers';
@@ -52,24 +55,24 @@ export class ListUsersComponent implements OnInit {
 
 
 
-  public config1: ToasterConfig = new ToasterConfig({
-    positionClass: 'toast-top-right',
+  // public config1: ToasterConfig = new ToasterConfig({
+  //   positionClass: 'toast-top-right',
 
-  });
+  // });
 
 
-  public toasterconfig: ToasterConfig =
-    new ToasterConfig({
-      tapToDismiss: false,
-      animation: 'fade',
-      limit: 5,
-      showCloseButton: { 'warning': true, 'error': false },
-      timeout: 2000
-    });
+  // public toasterconfig: ToasterConfig =
+  //   new ToasterConfig({
+  //     tapToDismiss: false,
+  //     animation: 'fade',
+  //     limit: 5,
+  //     showCloseButton: { 'warning': true, 'error': false },
+  //     timeout: 2000
+  //   });
 
-  popToast() {
-    this.toasterService.pop('success', 'Args Title', 'Args Body');
-  }
+  // popToast() {
+  //   this.toasterService.pop('success', 'Args Title', 'Args Body');
+  // }
 
 
 }

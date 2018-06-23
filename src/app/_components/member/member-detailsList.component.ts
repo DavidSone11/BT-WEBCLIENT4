@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { Observable } from 'rxjs/Observable';
-import { Router, ActivatedRoute, Params } from '@angular/router';
 
 
 @Component({
@@ -15,8 +13,6 @@ export class MemberListComponent implements OnInit {
   private selectedId: number;
 
   constructor(
-    private route: ActivatedRoute,
-    private router: Router,
     ) { }
 
   ngOnInit() {
