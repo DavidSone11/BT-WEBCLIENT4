@@ -14,12 +14,12 @@ export class BaseSixtyFour implements IBase {
       }
       encode(input: string): string {
             throw new Error("Method not implemented.");
-            console.log(btoa(this.keyStr));
+            //console.log(btoa(this.keyStr));
             return "";
       }
       decoding(): string {
             throw new Error("Method not implemented.");
-            console.log(atob("eW91ciBlbmNvZGluZyB0ZXh0"));
+            //console.log(atob("eW91ciBlbmNvZGluZyB0ZXh0"));
             return "";
       }
 
