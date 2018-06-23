@@ -21,7 +21,7 @@ import { LaddaModule } from 'angular2-ladda';
       style: "contract",
       spinnerSize: 40,
       spinnerColor: "red",
-      spinnerLines: 12
+      spinnerLines: 20
   })
   ],
   declarations: [

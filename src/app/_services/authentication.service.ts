@@ -1,20 +1,9 @@
 import { Injectable } from '@angular/core';
-
-import {
-    Http,
-    RequestOptions,
-    RequestOptionsArgs,
-    Response,
-    Request,
-    Headers,
-    XHRBackend
-} from '@angular/http';
+import {Http,RequestOptions,RequestOptionsArgs,Response,Request,Headers,XHRBackend} from '@angular/http';
 
 import 'rxjs/add/operator/map';
 import { Cookie } from 'ng2-cookies/ng2-cookies';
-import {
-    globalApiSettings
-  } from "../_settings/settings.index"
+import {globalApiSettings} from "../_settings/settings.index"
 
 class getCurrentDateInMin {
 
@@ -36,7 +25,7 @@ export class AuthenticateService {
         headers.append("Authorization", "Basic " + btoa(username + ":" + password));
         let options = new RequestOptions({ "headers": headers });
         return this._http.post(globalApiSettings.loginUri, { "username": username, "password": password }, options)
-        .toPromise().then((response) => response.json());
+            .toPromise().then((response) => response.json());
 
 
     }
@@ -58,8 +47,8 @@ export class AuthenticateService {
         localStorage.setItem('token', response.json()['token']);
         localStorage.setItem('username', response.json()['username']);
 
-        Cookie.set('token', response.json()['token'],1, '/login');
-        Cookie.set('username', response.json()['username'],1, '/login');
+        Cookie.set('token', response.json()['token'], 1, '/login');
+        Cookie.set('username', response.json()['username'], 1, '/login');
 
         // sessionStorage.setItem("token", successResponse.json()['token']);
         // sessionStorage.setItem("username", successResponse.json()['username']);

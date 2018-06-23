@@ -4,7 +4,7 @@ import { Http, Response, RequestOptions, Headers, Request, RequestMethod } from 
 //import { Observable } from 'rxjs/Rx';
 
 
-import { ToasterModule, ToasterService, ToasterConfig } from 'angular2-toaster';
+
 
 @Component({
   selector: 'app-user',
@@ -19,9 +19,9 @@ export class CreateUserComponent implements OnInit {
   public rowsOnPage = 10;
   public sortBy = "email";
   public sortOrder = "asc";
-  private toasterService: ToasterService;
-  constructor(private http: Http, toasterService: ToasterService) {
-    this.toasterService = toasterService;
+  
+  constructor(private http: Http) {
+    
   }
   ngOnInit() {
     let url = 'http://localhost:4000/api/v1/new/admin/getUsers';
@@ -52,24 +52,8 @@ export class CreateUserComponent implements OnInit {
 
 
 
-  public config1: ToasterConfig = new ToasterConfig({
-    positionClass: 'toast-top-right',
-
-  });
 
 
-  public toasterconfig: ToasterConfig =
-    new ToasterConfig({
-      tapToDismiss: false,
-      animation: 'fade',
-      limit: 5,
-      showCloseButton: { 'warning': true, 'error': false },
-      timeout: 2000
-    });
-
-  popToast() {
-    this.toasterService.pop('success', 'Args Title', 'Args Body');
-  }
 
 
 }
