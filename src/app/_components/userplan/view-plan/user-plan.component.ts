@@ -74,11 +74,11 @@ export class UserPlanComponent implements OnInit {
   }
 
   _loadallUserplanWithsubscribe(): void {
-    this._userService.getUserPlan().subscribe(
-      data => this._userPlansList.push(data),
-      err => {
-        console.log(err);
-      });
+    // this._userService.getUserPlan().subscribe(
+    //   data => this._userPlansList.push(data),
+    //   err => {
+    //     console.log(err);
+    //   });
 
 
   }

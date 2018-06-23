@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, RequestOptions, Headers, Request, RequestMethod } from '@angular/http';
 import { AuthHttp, AuthConfig } from 'angular2-jwt';
-import { Observable } from 'rxjs/Rx';
+//import { Observable } from 'rxjs/Rx';
 
 
 import { ToasterModule, ToasterService, ToasterConfig } from 'angular2-toaster';
@@ -29,13 +29,13 @@ export class ListUsersComponent implements OnInit {
     headers.append('token', localStorage.getItem("token"));
     headers.append('Content-Type', 'application/json');
     let options = new RequestOptions({ headers: headers });
-    this.http.get(url, options)
-      .map((res: Response) => (
-        res.json()
-      )).subscribe(data => {
-        this.usersList = data.results;
+    // this.http.get(url, options)
+    //   .map((res: Response) => (
+    //     res.json()
+    //   )).subscribe(data => {
+    //     this.usersList = data.results;
 
-      })
+    //   })
   }
 
   public toInt(num: string) {

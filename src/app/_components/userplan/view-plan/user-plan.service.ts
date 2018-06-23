@@ -10,7 +10,7 @@ import {
 } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
-import { Observable } from "rxjs/Rx";
+// import { Observable } from "rxjs/Rx";
 import {
     globalApiSettings,
     environment
@@ -54,13 +54,13 @@ export class UserService {
         this.options = new RequestOptions({ headers: this.headers });
 
     }
-    getUserPlan(): Observable<UserPlan[]> {
+    // getUserPlan(): Observable<UserPlan[]> {
 
-        return this._http.get(globalApiSettings.planUri, this.options)
-            .map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+    //     return this._http.get(globalApiSettings.planUri, this.options)
+    //         .map((res: Response) => res.json())
+    //         .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
 
-    }
+    // }
 
     loadUserPlanWithPromise(query): Promise<any> {
         let options = new RequestOptions({ headers: this.headers,params: query });
