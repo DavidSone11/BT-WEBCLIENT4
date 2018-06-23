@@ -2,7 +2,7 @@
     <app-header></app-header>
     <div class="left-Sidebar" [@sideMenuAnim]='openClose'>
         <nav>
-            <div class="profile clearFix">
+            <div class="profile">
                 <div class="profile_pic">
                     <img src="../../../assets/profile.jpg" alt="no image found" class="img-circle profile_img">
                 </div>
@@ -13,13 +13,7 @@
             </div>
 
             <ul class="left-sidebar-menu">
-                <!-- <li>
-                    <a routerLink="/dashboard" routerLinkActive="custom-active">
-                        <i class="fa fa-dashboard" aria-hidden="true"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li> -->
-
+    
                 <li>
                     <a routerLink="/dashboard/home" routerLinkActive="custom-active">
                         <i class="fa fa-home fa-fw" aria-hidden="true"></i>
@@ -53,7 +47,7 @@
                     <a routerLink="/pageNotFound" routerLinkActive="custom-active">
                         <i class="fa fa-th fa-fw"></i>
                         <span>
-                        {{'Link Broken'| translate}}
+                            {{'Link Broken'| translate}}
                         </span>
                         <small class="label pull-right">new</small>
 
@@ -80,18 +74,33 @@
                 </li>
 
 
-                <li>
-                    <a routerLink="/dashboard/user" routerLinkActive="custom-active">
-                        <i class="fa fa-user fa-fw" aria-hidden="true"></i>
-                        <span>User</span>
-                    </a>
-                </li>
+
                 <li>
                     <a href="#">
                         <i class="fa fa-bell fa-fw" aria-hidden="true"></i>
                         <span>Bell</span>
                     </a>
                 </li>
+
+                <li routerLink="/dashboard/user" routerLinkActive="custom-active">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>
+                        <span>User</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="nested-submenu">
+                        <li>
+                            <a href="../charts/chartjs.html">
+                                <i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> Create User</a>
+                        </li>
+                        <li>
+                            <a href="../charts/morris.html">
+                                <i class="fa fa-circle-o fa-fw"></i> List of Users</a>
+                        </li>
+
+                    </ul>
+                </li>
+
 
                 <li>
                     <a href="javascript:void(0)" (click)="logout()">
@@ -107,7 +116,7 @@
     </div>
     <app-right-sidebar></app-right-sidebar>
     <section id="content">
-        
+
         <section id="right-content" [@contentAnimation]='openClose'>
             <router-outlet></router-outlet>
         </section>
