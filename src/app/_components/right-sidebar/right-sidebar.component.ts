@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, animate, transition, style } from '@angular/animations';
 declare var $: any;
-// declare var jQuery:any;
-// import * as $ from 'jquery';
-// import $ from 'jquery';
+
 @Component({
   selector: 'app-right-sidebar',
   templateUrl: './right-sidebar.component.html',
@@ -42,7 +40,7 @@ export class RightSidebarComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    $(document).ready(function(){
+
     $.sidebarMenu = function (menu) {
       var animationSpeed = 300,
         subMenuSelector = '.sidebar-submenu';
@@ -84,7 +82,7 @@ export class RightSidebarComponent implements OnInit {
       });
     }
     $.sidebarMenu($('.sidebar-menu'))
-  });
+
 
   }
 
