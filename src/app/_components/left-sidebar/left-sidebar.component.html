@@ -1,18 +1,18 @@
 <div id="wrapper">
     <app-header></app-header>
     <div class="left-Sidebar" [@sideMenuAnim]='openClose'>
-       
+
         <nav>
 
-                <div class="profile">
-                        <div class="profile_pic">
-                            <img src="../../../assets/profile.jpg" alt="no image found" class="img-circle profile_img">
-                        </div>
-                        <div class="profile_info">
-                            <span>Welcome,</span>
-                            <h2>John Doe</h2>
-                        </div>
-                    </div>
+            <div class="profile">
+                <div class="profile_pic">
+                    <img src="../../../assets/profile.jpg" alt="no image found" class="img-circle profile_img">
+                </div>
+                <div class="profile_info">
+                    <span>Welcome,</span>
+                    <h2>John Doe</h2>
+                </div>
+            </div>
 
 
             <ul class="left-sidebar-menu">
@@ -45,6 +45,18 @@
                     </a>
 
                 </li>
+
+                <li>
+                    <a routerLink="/upload" routerLinkActive="custom-active">
+                        <i class="fa fa-download fa-fw"></i>
+                        <span>
+                            {{'Upload'| translate}}
+                        </span>
+
+
+                    </a>
+                </li>
+
 
                 <li>
                     <a routerLink="/pageNotFound" routerLinkActive="custom-active">

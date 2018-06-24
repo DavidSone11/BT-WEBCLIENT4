@@ -17,6 +17,7 @@ const routes: Routes = [{
                 { path: 'trainstation', loadChildren: '../train-station/train-station.module#trainStationModule' },
                 { path: 'charts', loadChildren: '../charts/charts.module#nChartsModule' },
                 { path: 'user', loadChildren: './user/user.module#UserModule' },
+                { path: 'upload', loadChildren: '../upload/upload.component.module.module#UploadModule' },
                 { path: 'elements', loadChildren: '../elements/elements.module#ElementModule' }
             ]
         },
