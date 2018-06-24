@@ -38,16 +38,17 @@
         <th>action</th>
       </tr>
       <tbody *ngIf="fileinfo.length>0">
-        <tr *ngFor="let f of fileinfo;let i = index">
+        <tr *ngFor="let fileItem of fileinfo;let i = index" [class.highlighted]="fileItem.filename === currentName" (click)="selectedUpload($event,fileItem)">
+          <!-- <td><a (click)="selectedUpload($event,fileItem)" class="btn btn-success btn-xs fa fa-th-list" title="View"></a></td> -->
           <td>{{i+1}}</td>
-          <td>{{f.filename}}</td>
+          <td>{{fileItem.filename}}</td>
           <td>{{'santosh'}}</td>
-          <td>{{f.size}}</td>
-          <td>{{f.type}}</td>
-          <td>{{f.lastModifiedDate}}</td>
+          <td>{{fileItem.size}}</td>
+          <td>{{fileItem.type}}</td>
+          <td>{{fileItem.lastModifiedDate}}</td>
           <!-- <td><img [src]="f.fileData" width="80" height="80"></td> -->
           <td>
-            <button class="btn btn-danger btn-sm" (click)="deleteRecord(f)">
+            <button class="btn btn-danger btn-sm" (click)="deleteRecord(fileItem)">
               <i class="fa fa-trash" aria-hidden="true"></i>
             </button>
             &nbsp;

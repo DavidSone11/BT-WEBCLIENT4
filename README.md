@@ -64,3 +64,4 @@ https://basarat.gitbooks.io/typescript/content/docs/types/lib.d.ts.html
 * npm install --only=dev
 
 https://embed.plnkr.co/plunk/8ppG4F
+http://javabypatel.blogspot.com/2017/07/read-csv-file-in-angular2.html

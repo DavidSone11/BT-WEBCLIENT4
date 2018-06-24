@@ -109,3 +109,8 @@ div.upload input {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.highlighted{
+    background-color: #4CAF50!important;
+    color: #fff;
+}
