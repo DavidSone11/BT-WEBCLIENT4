@@ -21,17 +21,15 @@ import {
       state('active', style(
         {
           marginLeft: '0px',
-          transition: '0.8s all'
         },
 
 
       )),
       state('inactive', style({
         marginLeft: '-200px',
-        transition: '0.8s all'
       })),
-      //transition('inactive => active', animate('2s all')),
-      //transition('active => inactive', animate('2s all'))
+      transition('inactive => active', animate('300ms')),
+      transition('active => inactive', animate('1000ms'))
     ]),
     trigger('contentAnimation', [
       state('active', style(

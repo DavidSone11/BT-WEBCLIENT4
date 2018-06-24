@@ -41,14 +41,15 @@ export class RightSidebarComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+    var animationSpeed = 300;
+    var subMenuSelector = '.sidebar-submenu';
+    // $.  = function(menu){
 
-    $('.right-sidebar li.nestedmenu').click(function (e) {
-        e.stopPropagation();
-       $(this).find('ul').stop(false).slideToggle(500, "swing"); 
+    // }
+    $(".sidebar-submenu").on('click', 'li a', function (e) {
+      alert("DASD");
 
     });
-
-
   }
 
 }

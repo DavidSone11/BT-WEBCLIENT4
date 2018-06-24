@@ -52,7 +52,15 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  setMyStyles() {
+    let styles = {
+      // 'background-color': "red"
+    };
+    return styles;
+  }
+
   openCloseSidebar(): void {
+    
     this.leftSidebarComponent.toggleSidebar();
     this.openClose = (this.openClose === 'active') ? 'inactive' : 'active';
 
