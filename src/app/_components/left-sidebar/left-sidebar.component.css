@@ -20,7 +20,7 @@
 .left-sidebar-menu {
     list-style: none;
     margin: 0;
-    padding: 60px 1px 0px 0px;    
+    padding: 190px 0;    
 }
 
 .left-sidebar-menu>li {
@@ -160,6 +160,10 @@
     font-size: 13px;
     line-height: 30px;
     color: #BAB8B8;
+}
+.left-Sidebar .profile_info{
+    margin-bottom: 30px;
+
 }
 
 

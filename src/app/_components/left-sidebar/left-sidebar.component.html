@@ -1,19 +1,22 @@
 <div id="wrapper">
     <app-header></app-header>
     <div class="left-Sidebar" [@sideMenuAnim]='openClose'>
+       
         <nav>
-            <div class="profile">
-                <div class="profile_pic">
-                    <img src="../../../assets/profile.jpg" alt="no image found" class="img-circle profile_img">
-                </div>
-                <div class="profile_info">
-                    <span>Welcome,</span>
-                    <h2>John Doe</h2>
-                </div>
-            </div>
+
+                <div class="profile">
+                        <div class="profile_pic">
+                            <img src="../../../assets/profile.jpg" alt="no image found" class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>John Doe</h2>
+                        </div>
+                    </div>
+
 
             <ul class="left-sidebar-menu">
-    
+
                 <li>
                     <a routerLink="/dashboard/home" routerLinkActive="custom-active">
                         <i class="fa fa-home fa-fw" aria-hidden="true"></i>
