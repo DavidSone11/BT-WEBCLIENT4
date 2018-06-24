@@ -1,0 +1,32 @@
+div.upload {
+    width: 145px;
+    height: 40px;
+    background: #3c3c3c;
+    overflow: hidden;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+div.upload span {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+div.upload input {
+    display: block !important;
+    width: 157px !important;
+    height: 57px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+.div1,.div2 {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .div2 {
+    float: right;
+  }
