@@ -67,10 +67,7 @@ table.custom {
     }
     
     table.custom td::before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table.custom
-      content: attr(aria-label);
-      */
+    
       content: attr(data-label);
       float: left;
       font-weight: bold;

@@ -54,6 +54,14 @@ export class UploadComponent implements OnInit {
 
   }
 
+
+  deleteRecord(row: any) {
+    var index = this.fileinfo.indexOf(row);
+    if (index > -1) {
+      this.fileinfo.splice(index, 1);
+    }
+  }
+
   getFileInformation(event: any) {
     this.getUrl(event);
     if (event.target.files && event.target.files[0]) {
@@ -67,10 +75,10 @@ export class UploadComponent implements OnInit {
 
     }
   }
-   bytesToSize(bytes) {
+  bytesToSize(bytes) {
     var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
     if (bytes == 0) return '0 Byte';
     //  var i= parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
     // return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
- };
+  };
 }
