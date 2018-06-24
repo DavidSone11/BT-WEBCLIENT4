@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FileUploader } from 'ng2-file-upload';
-const URL = 'http://localhost:4000/api/v1/upload';
+import {Router,ActivatedRoute} from '@angular/router'
+import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
@@ -8,20 +9,22 @@ const URL = 'http://localhost:4000/api/v1/upload';
 })
 export class UploadComponent implements OnInit {
   
-  constructor() { }
+  commentsList: object;
+  isloading: boolean = false;
+
+  router:any;
+  urlpart:string;
+  constructor(private _router: Router,private activeRoute:ActivatedRoute,private http: HttpClient ) {
+    this.router = _router;
+    this.urlpart = this.router.url.checkRoute();
+
+
+  }
 
   ngOnInit() {
   }
-  public uploader:FileUploader = new FileUploader({url: URL});
-  public hasBaseDropZoneOver:boolean = false;
-  public hasAnotherDropZoneOver:boolean = false;
+  
 
-  public fileOverBase(e:any):void {
-    this.hasBaseDropZoneOver = e;
-  }
-
-  public fileOverAnother(e:any):void {
-    this.hasAnotherDropZoneOver = e;
-  }
+  
 
 }
