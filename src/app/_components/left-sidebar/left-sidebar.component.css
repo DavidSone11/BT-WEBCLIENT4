@@ -52,6 +52,7 @@
     background-color: rgba(0, 0, 0, .2);
     border-left-color: #3c8dbc;
     border-right-color: #3c8dbc;
+    /* padding: 10px 0px !important; */
 }
 
 .left-sidebar-menu li>a>.fa-angle-left {
