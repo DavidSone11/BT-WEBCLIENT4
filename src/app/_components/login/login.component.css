@@ -1,5 +1,5 @@
 .main-container {
-    background: url("../../../assets/main-container.jpg");
+    background: url("../../../assets/images/main-container.jpg");
     background-size: cover;
     font-family: sans-serif;
     height: 100%;
@@ -11,22 +11,22 @@
 
 @keyframes main-container-effect {
     15% {
-        background: url("../../../assets/adventure-alps-black-and-white-1146642.jpg");
+        background: url("../../../assets/images/adventure-alps-black-and-white-1146642.jpg");
     }
     30% {
-        background: url("../../../assets/autumn-colorful-colourful-33109.jpg");
+        background: url("../../../assets/images/autumn-colorful-colourful-33109.jpg");
     }
     45% {
-        background: url("../../../assets/beach-bora-bora-clouds-753626.jpg");
+        background: url("../../../assets/images/beach-bora-bora-clouds-753626.jpg");
     }
     60% {
-        background: url("../../../assets/bloom-blossoms-buds-87452.jpg");
+        background: url("../../../assets/images/bloom-blossoms-buds-87452.jpg");
     }
     75% {
-        background: url("../../../assets/conifer-daylight-environment-454880.jpg");
+        background: url("../../../assets/images/conifer-daylight-environment-454880.jpg");
     }
     100% {
-        background: url("../../../assets/hd-wallpaper-landscape-long-exposure-68147.jpg");
+        background: url("../../../assets/images/hd-wallpaper-landscape-long-exposure-68147.jpg");
     }
 }
 
