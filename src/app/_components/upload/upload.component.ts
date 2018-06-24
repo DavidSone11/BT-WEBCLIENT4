@@ -15,6 +15,7 @@ export class UploadComponent implements OnInit {
   isloading: boolean = false;
   arrayBuffer: any;
   file: File;
+  fileinfo: any = [];
 
   router: any;
   urlpart: string;
@@ -28,24 +29,48 @@ export class UploadComponent implements OnInit {
   ngOnInit() {
   }
 
+  localUrl: any[];
 
+  incomingfile(event: any) {
+    // this.file = event.target.files[0];
 
-  incomingfile(event) {
-    this.file = event.target.files[0];
-    this.getUrl(event);
+    this.getFileInformation(event);
   }
 
-  getUrl(event) {
-    let fileList: FileList = event.target.files;
-    if(fileList.length > 0) {
-        let file: File = fileList[0];
-        let formData:FormData = new FormData();
-        formData.append('uploadFile', file, file.name);
-      
-      
+  getUrl(event: any) {
+    // let fileList: FileList = event.target.files;
+    // if(fileList.length > 0) {
+    //     let file: File = fileList[0];
+    //     let formData:FormData = new FormData();
+    //     formData.append('uploadFile', file, file.name);
+
+    if (event.target.files && event.target.files[0]) {
+      var reader = new FileReader();
+      reader.onload = (event: any) => {
+        this.localUrl = event.target.result;
+      }
+      reader.readAsDataURL(event.target.files[0]);
     }
-}
 
+  }
 
+  getFileInformation(event: any) {
+    this.getUrl(event);
+    if (event.target.files && event.target.files[0]) {
+      let fileList: FileList = event.target.files;
+      if (fileList.length > 0) {
+        debugger;
+        this.fileinfo.push(
+          { 'filename': fileList[0].name, 'size': fileList[0].size, 'type': fileList[0].type, 'lastModifiedDate': fileList[0].lastModifiedDate, 'fileData': this.localUrl }
+        );
+      }
 
+    }
+  }
+   bytesToSize(bytes) {
+    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    if (bytes == 0) return '0 Byte';
+    //  var i= parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+    // return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+ };
 }

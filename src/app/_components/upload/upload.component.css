@@ -10,7 +10,7 @@ div.upload {
 }
 
 div.upload span {
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
 }
 
@@ -22,11 +22,11 @@ div.upload input {
     overflow: hidden !important;
 }
 
-.div1,.div2 {
-    display: inline-block;
+/* .div1,.div2 {
+    display: block;
     padding: 0 10px;
   }
 
   .div2 {
     float: right;
-  }
+  } */

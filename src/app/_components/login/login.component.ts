@@ -25,13 +25,10 @@ export class LoginComponent implements OnInit {
   login() {
 
     setTimeout(() => {
-      localStorage.setItem("username", this.username);
-      localStorage.setItem("password", this.password);
-      localStorage.setItem("role", this.role);
-      localStorage.setItem("token", this.token);
+      localStorage.setItem("userInfo", JSON.stringify({ 'username': this.username, role: this.role, token: this.token }));
       this.router.navigate(['/dashboard/home']);
     }, 1000);
 
-  
+
   }
 }
