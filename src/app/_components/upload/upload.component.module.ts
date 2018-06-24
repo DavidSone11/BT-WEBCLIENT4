@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UploadComponent } from './upload.component';
 import { UploadRouting } from './upload.component.routing';
 import { BreadCrumbModule } from '../../_modules/bread-crumb/breadCrumb.module';
-import { PageHeaderModule } from '../../_modules/index';
+
 
 
 
@@ -11,7 +11,6 @@ import { PageHeaderModule } from '../../_modules/index';
     imports: [
         CommonModule,
         UploadRouting,
-        PageHeaderModule,
         BreadCrumbModule
 
     ],
