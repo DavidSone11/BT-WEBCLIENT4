@@ -212,7 +212,7 @@
   .left-Sidebar .custom-active {
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 0px !important;;
 }
 
 /* .left-Sidebar .nested-menu{
